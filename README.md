@@ -1,3 +1,2 @@
 # FRAMEWORK
-Web development starter kit
-This is the master repository
+Web development starter kit master repository
