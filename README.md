@@ -1,3 +1,5 @@
 # FRAMEWORK
-Web development starter kit
-This is the master repository
+Web development starter kit master repository
+# Git info
+Using branch 2019
+
