@@ -1,0 +1,59 @@
+	#navToggle {
+		//position: absolute; 
+		//right: 12px; 
+		//top: 12px; 
+		//display: none;
+		z-index: 2000;
+		cursor: pointer; 
+		padding: 10px 35px 16px 0px; 	
+		
+			a {
+				
+			}	
+		
+@media screen and (max-width: $mobile) {
+			display: block;
+			}		
+		
+		}
+
+	
+#navToggle span, #navToggle span:before, #navToggle span:after {
+		cursor: pointer;
+		border-radius: 1px;
+		height: 5px;
+		width: 35px;
+		background: $baseColour;
+		position: absolute;
+		display: block;
+		content: '';
+		}
+	
+	#navToggle span:before {
+	  	top: -10px; 
+		}
+	
+	#navToggle span:after {
+	  	bottom: -10px;
+		}
+	
+	#navToggle span, #navToggle span:before, #navToggle span:after {
+	  	transition: all 300ms ease-in-out;
+		}
+		
+	#navToggle.active span {
+	  	background-color: transparent;
+		}
+		
+	#navToggle.active span:before, #navToggle.active span:after {
+	  	top: 0;
+	  	background: $baseColour; 
+		}
+	
+	#navToggle.active span:before {
+	  	transform: rotate(45deg);
+		}
+	
+	#navToggle.active span:after {
+	  	transform: rotate(-45deg);
+		}

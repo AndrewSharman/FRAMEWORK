@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Backstretch | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    
+	<style>
+	    
+     
+      .other { 
+	      height: 300px;}
+     
+	</style>
+</head>
+
+<body class="framework">
+
+	<header class="unit1">
+	
+		<p><a href="../index.html">Silk Pearce Framework</a></p>
+		
+		<h1>Backstretch</h1>
+		
+	</header>
+
+    <div class="container">
+    
+    	
+        
+    </div>
+            
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	  <script>window.jQuery || document.write('<script src="../js/jquery-2.2.4.min.js">\x3C/script>')</script>
+		
+		<script src="../js/jquery.backstretch.min.js"></script>
+		
+		<script>
+		    
+		    	// Slideshow images in background
+				$.backstretch([
+				"../images/backgrounds/pot-holder.jpg",
+				"../images/backgrounds/coffee.jpg",
+				"../images/backgrounds/dome.jpg"
+				], {
+				fade: 750,
+				duration: 4000
+				});		    
+		    
+				// Single image in container 
+				$(".other").backstretch("../images/backgrounds/coffee.jpg");
+	      
+	      
+	  	</script>
+  
+</body>
+</html>

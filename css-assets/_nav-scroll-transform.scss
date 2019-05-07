@@ -1,0 +1,23 @@
+
+
+.mainHeader {
+	
+	position: fixed;
+	 @include transition(background-color,0.4s);
+	 
+	 
+	 // Only show transform on non-mobile
+	 
+	 @media only (min-width: $mobile) {
+	
+			&.transformHeader{
+				
+				background-color: $accentColour;
+				
+				}
+				
+			}
+	
+	
+	
+	}

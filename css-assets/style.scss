@@ -1,0 +1,74 @@
+/* 
+	Client: 
+	Author: Silk Pearce
+*/
+
+
+// Comment out unwanted components to remove from compiled version
+
+// Global
+
+@import 'normalize';
+
+@import 'sass';
+
+@import 'flexbox';
+
+@import 'grid';
+
+@import 'typography';
+
+@import 'layout';
+
+@import 'buttons';
+
+
+// Optional
+
+//@import 'sticky-footer';
+
+@import 'form';
+
+
+// Sliders
+
+@import 'flexslider';
+
+@import 'slick-slider';
+
+
+// Navigation
+
+@import 'horizontal-nav-dropdown';
+
+@import 'nav-scroll-transform';
+
+@import 'burger-icon';
+
+@import 'nav-slideon';
+
+// @import 'vertical-nav-dropdown';
+
+@import 'faqs';
+
+@import 'modal';
+
+@import 'icon-font';
+
+@import 'scrollbar';
+
+@import 'snippets';
+
+// @import 'media-queries';
+
+
+
+@import 'arrow';
+
+
+// Example styles
+
+@import 'framework';
+
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>FAQs | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    
+    
+    <style type="text/css">
+	    
+	    .unit2 {
+		    background-color: #ccc;
+	   		}
+    
+    	.reveal1 p {
+		    	display: none;
+    		}
+    		
+    	header.active {
+	    	background-color: yellow;
+    		}
+    		
+    		
+    	.button {
+	    	width: 80px;
+	    	height: 80px;
+	    	border-radius: 50%;
+	    	float: left;
+	    	margin-right: 22px;
+    		}
+    		
+    	.imRed {
+	    	display: inline-block;
+	    	cursor: pointer;
+    		}	
+    		
+    	.button.active {
+	    	opacity: .5;
+    		}	
+    		
+    	.red {
+	    	background-color: red;
+    		}
+    		
+    	.blue {
+	    	background-color: blue;
+    		}		
+    			
+    	
+    
+    
+    </style>
+    
+  </head>
+
+	<body class="framework">
+	
+		<header class="unit1">
+		
+			<p><a href="../index.html">Silk Pearce Framework</a></p>
+			
+			<h1>Toggle</h1>
+			
+		</header>
+
+
+		<section class="unit1 unitpadding">
+		
+			<div class="unit2 reveal1">
+			
+				<header>Reveal</header>
+			
+				<p>’Twas brillig, and the slithy toves Did gyre and gimble in the wabe:All mimsy were the borogoves, And the mome raths outgrabe.</p> 
+			
+				<p class="close">Close</p>
+			
+			</div>
+			
+			<div class="unit2 reveal2">
+			
+				<header>Change class</header>
+			
+			</div>	
+			
+			<div class="unit2 reveal3">
+			
+				<header>Hover</header>
+				
+				<span class="imRed">Red</span> <span class="imBlue">Blue</span>
+				
+				<div>
+				
+				<div class="button red"></div>
+				
+				<div class="button blue"></div>
+				
+				</div>
+			
+			</div>
+					
+
+		
+		</section>
+
+<!-- Javascript -->			
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="../js/jquery.js"><\/script>')</script>
+		
+	
+	<script>
+	
+			jQuery(document).ready(function($){
+		
+			$(".reveal1 header").on("click", function(){
+				jQuery(".reveal1 p").slideDown();
+				});	
+				
+			$(".reveal1 .close").on("click", function(){
+				jQuery(".reveal1 p").slideUp();
+				});	
+				
+			$(".reveal2").on("click", function(){
+				jQuery(".reveal2 header").toggleClass("active");
+				});		
+				
+							
+			$(".imRed").on("mouseover", function(){
+				jQuery(".button.red").fadeToggle();
+				});		
+				
+			$(".imRed").on("mouseout", function(){
+				jQuery(".button.red").fadeToggle();
+				});													
+				
+		    });			
+						
+		
+	</script>
+					
+
+</body>
+</html>
+
+

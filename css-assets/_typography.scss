@@ -1,0 +1,186 @@
+/* 
+	Typography
+
+*/
+
+//  Global styles. Component font styles in 'layout'
+// -----------------------------------------------
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	
+	@media (max-width: $mobile) {
+		font-size: 18px;
+		}	
+	
+	}
+	
+html, html a { 
+	-webkit-font-smoothing: antialiased  !important;
+	-moz-osx-font-smoothing: grayscale; 
+	}	
+
+
+a {
+	 @include transition(color,0.4s);
+	 color: #666;
+	}
+
+a:focus { 
+    outline: none;
+    }		
+    
+    
+// Will force wrap on long URLs
+
+
+// p {
+// padding: 15px;
+// white-space: pre; 
+// white-space: pre-wrap;
+// white-space: pre-line; 
+// word-wrap: break-word;
+// }
+    
+
+//  p
+// -----------------------------------------------
+
+p { font-size: .95em;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+	margin-top: 0;
+	& a {
+		border-bottom: 1px solid #999;
+		padding-bottom: 1px;
+		
+		&:hover {
+			border-color: $accentColour;
+			}
+		
+		}
+	}
+
+// H1
+// -----------------------------------------------
+
+h1 {
+	//font-size: 2.6vw;
+	font-size: 2.6rem;
+	line-height: 1.2em;
+	margin-top: 0;
+	margin-bottom: 1em;
+	}
+
+// H2
+// ----------------------------------------------- 
+
+h2 {
+	font-size: 2rem;
+	line-height: 1.3em;
+	margin-bottom: 0em;
+	margin-top: 0em;
+	}
+
+// H3
+// ----------------------------------------------- 
+
+h3 {
+	font-size: 1.6rem;
+	line-height: 1.3em;
+	margin-bottom: 0;
+	margin-top: 0;
+	}
+
+// H4
+// ----------------------------------------------- 
+
+h4{
+	font-size: 1.4rem;
+	line-height: 1.3em;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+
+
+// H5
+// -----------------------------------------------
+
+h5 {
+	font-size: 1rem;
+	line-height: 1.3em;
+	margin-bottom: 0;
+	margin-top: 0;
+	}
+
+
+// H6
+// ----------------------------------------------- 
+
+h6 {
+	font-size: .9rem;
+	line-height: 1.3em;
+	margin-bottom: .6em;
+	}
+	
+
+// Lists
+// -----------------------------------------------
+
+ul {
+	padding-left: 1em;
+	margin-bottom: .6em;
+	list-style: disc;
+	}
+	
+ol {
+	padding-left: 1.2em;
+	margin-bottom: .6em;
+	}	
+	
+li {
+	
+	font-size: 0.9em;
+	line-height: 1.3em;
+	font-size: .95em;
+	line-height: 1.4em;	
+	
+	& a {
+		border-bottom: 1px solid #999;
+		//padding-bottom: 1px;
+		
+		&:hover {
+			border-color: $accentColour;
+			}
+		
+		}	
+	
+	}
+	
+
+// Blockquote
+// -----------------------------------------------	
+
+	
+blockquote {
+	
+	position: relative;
+	
+	&:before {
+		
+		content: "\201c";
+		position: absolute;
+		top: -10px;
+		left: -44px;
+		font-size: 3em;
+		font-weight: 700;	
+		
+		}
+	
+	}	
+	
+// Blockquote
+// -----------------------------------------------	
+	
+				

@@ -1,0 +1,33 @@
+/* 
+
+	Sticky footer
+	
+*/
+
+
+html { 
+	overflow-y: scroll; // Prevents jolting between pages 
+	}
+
+html, body {
+	height: 100%;
+	}
+	
+.pageWrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -100px; // Set footer height to match
+	}
+	
+footer, .push {
+	height: 100px; // Set wrap margin to match
+	clear: both;
+	}
+	
+footer {
+	display: block;
+	background: #ded;
+	}
+
+

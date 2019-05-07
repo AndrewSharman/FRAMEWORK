@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Advanced selectors | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+		
+		<!-- Styles -->
+		
+
+		<style type="text/css">
+		
+		body {font-family: Arial, sans-serif;}
+		
+		a {text-decoration: none; border-bottom: 1px solid black;}
+				
+		hr { border: none; height: 1px; width: 100%; background: #666; margin-top: 20px; margin-bottom: 20px;}
+		
+		h3 {font-size: 1.6em; margin-bottom: .4em; margin-top: .4em;}
+		
+		code {color: #e16622}
+		
+		p {margin-bottom: .5em;}
+		
+/* Example 1. Child combinator selector */
+		
+		p > em { color: red }
+		
+		strong > em { color: olive; font-weight: normal }
+		
+/* Example 2. Adjacent sibling selector */
+		
+		h4 + p {color: teal;}
+		
+/* Example 3. General sibling combinator */
+		
+		h5 ~ p {color: navy;}
+		
+		
+/* Example 4. Highlight an external link */
+		
+		a[href^="http"] {
+			   color: olive;
+			   border-bottom: 1px solid olive;
+			}
+			
+		a[href^="http"]:after {
+			   content: " ext";
+			   font-size: 50%;
+			}	
+			
+/*  Example 5. 'Not' selector */
+		
+		div {
+			width: 180px;
+			height: 180px;
+			float: left;
+			background: olive;
+		}
+		
+		div:not(.olive) {
+			background: silver;
+		}
+		
+/*  Example 6. Pseudo elements */
+		
+		span p:first-of-type::first-letter {
+			font-weight: bold; 
+			font-size: 250%;
+		}
+		
+/*  Example 6a. Pseudo elements */
+		
+		span p:first-of-type::first-letter {
+			font-weight: bold; 
+			font-size: 250%;
+		}		
+		
+/* Example 7. Data type */
+		
+		a[data-filetype="image"] {
+			   border-bottom: none;
+			}
+			
+/* Example 8. :nth-child() */
+
+	
+		
+		ul.child li:nth-child(2) {
+			  color: red;
+			}
+					
+		ul.child-2 li:nth-child(3n+0) {
+			   color: red;
+			}		
+		
+		</style>
+
+	</head>
+	<body class="framework">
+	
+	<header class="unit1">
+	
+		<p><a href="../index.html">Framework</a></p>
+		
+		<h1>Advanced selectors</h1>
+		
+	</header>
+	
+	<section class="unit1 unitpadding">
+
+    
+			<h3>1. Child combinator selector</h3>
+			<code>p > em { color: red }</code>
+			<code>strong > em { color: olive; font-weight: normal }</code>
+			<p>In the text below only the italic text in the first line is coloured red.</p>
+			
+			<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em>  elit, sed do eiusmod tempor  <em>incididuntut labore</em> et dolore magna aliqua.</p>
+			<p><strong>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>	
+		         
+		    <hr />               
+			
+			<h3>2. Adjacent sibling selector</h3>
+			<code>h4 + p {color: teal;}</code>
+			<h4>In the example below only the first paragraph that follows H4 is coloured</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+			<hr />  
+			
+			<h3>3. General sibling combinator</h3>
+			<code>h5 ~ p {color: navy;}</code>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h5>Every paragraph below this line of text in the H5 tag is coloured</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+			
+			<hr />
+			
+			<h3>4. Highlight an external link</h3>
+			<p>The link below shows it is an external link</p>
+			<p><a href="#">Normal link</a> &nbsp; <a href="http://www.google.com">External link</a></p>
+			
+			<hr />
+			
+			<h3>5. Not selector</h3>
+			<code>div:not(.olive) {
+					background: silver;
+				}</code>
+			<p>The boxes without the class 'olive' are coloured grey</p>
+			<div></div>
+			<div class="olive"></div>
+			<div></div>
+			
+			<hr />
+			
+			<h3>6. Pseudo element</h3>
+			
+			<code>span p:first-of-type::first-letter {font-weight: bold;  font-size: 250%;}</code>
+			<span><p>Targets element - block level only. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</span>
+			
+			<hr />	
+			
+			<h3>7. Data type</h3>
+			<code>a[data-filetype="image"] {
+					   border-bottom: none;
+					}</code>
+			<p><a href="#">This link has a border</a> but the image does not.</p>
+			<p><a href="#" data-filetype="image"><img src="http://www.centralcycles.org.uk/images/categories/category-childrens-bike.jpg" /></a></p>
+			
+			</p>
+			
+			<hr />	
+			<h3>8. :nth-child() Selector</h3>
+			
+			<p>The second item only is highlighted</p>
+			
+			<code>ul.child li:nth-child(2) {
+					  color: red;
+					}</code>
+					
+				<ul class="child">
+					<li>Item one</li>
+					<li>Item two</li>
+					<li>Item three</li>
+					<li>Item four</li>	
+				</ul>
+				
+			<p>Every third item only highlighted</p>
+				
+			<code>ul.nth-child(3n+0) {
+					   color: red;
+					}</code>		
+					
+				<ul class="child-2">
+					<li>Item one</li>
+					<li>Item two</li>
+					<li>Item three</li>
+					<li>Item four</li>	
+					<li>Item five</li>
+					<li>Item six</li>
+					<li>Item seven</li>
+					<li>Item eight</li>				
+				</ul>
+				
+		</div>		
+
+	
+	</body>
+</html>	

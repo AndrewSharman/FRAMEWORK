@@ -1,0 +1,73 @@
+html.active {
+	overflow: hidden;
+	}
+
+
+.mainNav.slideOn {
+		width: 50%;		
+		position: fixed;
+		top: 0;
+		right: 0;	
+		margin-right: -50%;
+		
+		&.active {
+			margin-right: 0;
+			}	
+				
+		ul {
+			margin: 0;
+			width: 100%;
+			background-color: #333;
+			padding: 5%;
+			
+			
+			li {
+				
+				font-size: 2em;
+				
+				a {
+					border: none;
+					}
+				}
+			
+			}		
+					
+		}
+		
+		
+.active {
+	animation-duration: 1s;
+	animation-name: slideRight;	
+	}		
+					
+@keyframes slideRight {
+	
+		from {
+			right: -100%;
+			}
+		
+		to {
+			right: 0;
+			}
+		
+		}
+		
+		
+		
+.inActive {
+	animation-duration: 1s;
+	animation-name: slideLeft;	
+	}		
+					
+@keyframes slideLeft {
+	
+		from {
+			right: 0;
+			}
+		
+		to {
+			right: -100%;
+			}
+		
+		
+		}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Responsive images | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    
+    
+    <style type="text/css">
+    
+    	img {
+	    	width: 80%;
+	    	hieght: auto;
+	    	margin-left: 10%;
+			}
+
+@media only screen and (max-width: 1000px) {			
+			
+		.pictureImageFit img {
+			
+					width: 80%;
+					height: 400px;
+					object-fit: cover;
+					/* object-fit: fill;
+					object-fit: contain;
+					object-fit: scale-down;*/
+					
+					object-position: 0 0;
+			
+				}	
+			
+			}
+    
+    
+    </style>
+    
+  </head>
+
+	<body class="framework">
+	
+		<header class="unit1">
+		
+			<p><a href="../index.html">Silk Pearce Framework</a></p>
+			
+			<h1>Responsive images</h1>
+			
+		</header>
+		
+		<div class="unit1">
+		
+			<div class="centreWrap">
+			
+				<h2>Source set</h2>
+				
+				<p>To be used when resolution needs to change and not crop.</p>
+				<p>The browser will load the nearest required size first - then resize that version if the browser is resized. This means mulitiple versions of the same image are not downloaded.</p>
+				<p><strong>It also means that all the various image sizes will not be seen unless the browser cache is cleared first.</strong></p>
+				<p>You can see this working by clearing the browser cache, then opening the page at the smallest browser size. The picture will change as the browser is enlarged.</p>
+				
+				<img src="../images/temps/fiat-500-750px.jpg" 
+					srcset="../images/temps/fiat-500-500px.jpg 1000w,
+							../images/temps/fiat-500-1000px.jpg 1500w, 
+							../images/temps/fiat-500-2000px.jpg 2000w" 
+							alt="Fiat">
+							
+							
+				<!--
+					
+					
+					<img srcset="elva-fairy-320w.jpg 320w,
+             elva-fairy-480w.jpg 480w,
+             elva-fairy-800w.jpg 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+					
+				-->			
+				
+				<h2>Picture</h2>
+				
+				<p>To be used when the crop needs to change on browser resize and a different image is displayed. Less effective as <code>srcset</code> as a new image will be downloaded when the browser is resized.</p>
+				<picture>
+					<source srcset="../images/backgrounds/coffee.jpg"
+		            	media="(min-width: 1000px)">
+					<img src="../images/backgrounds/dome.jpg" alt="dome" width="1296" height="968">
+				</picture>
+				
+				<p>Crop adjustment with object position and object fit</p>
+				
+				<span class="pictureImageFit">
+					<img src="../images/backgrounds/coffee.jpg" alt="dome" width="1296" height="968">
+				</span>				
+			
+			</div>
+		
+		</div>
+		
+</body>
+</html>

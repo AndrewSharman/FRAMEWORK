@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Page load | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    
+	<style type="text/css">
+	
+		body {
+			display: none;
+			}
+	
+	</style>   
+    
+  </head>
+
+	<body class="framework preload">
+		
+		<header class="unit1">
+		
+			<p><a href="../index.html">Silk Pearce Framework</a></p>
+			
+			<h1>Page load</h1>
+			
+		</header>
+
+		<img src="../images/backgrounds/coffee.jpg" alt="coffee" width="50%" height="auto" />
+		<img src="../images/backgrounds/dome.jpg" alt="dome" width="50%" height="auto" />
+		<img src="../images/backgrounds/pot-holder.jpg" alt="pot-holder" width="50%" height="auto" />
+		
+		
+<!-- Javascript -->			
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/jquery-2.2.4.min.js">\x3C/script>')</script>
+
+	<script>
+	
+		$(window).load(function() {
+			
+			// When the page has loaded
+			
+			$("body").fadeIn(2000);
+			
+			$("body").removeClass("preload");
+			
+		});
+		
+	</script>
+
+	
+
+
+		
+	
+
+					
+
+</body>
+</html>

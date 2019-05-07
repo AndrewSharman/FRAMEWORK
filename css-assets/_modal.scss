@@ -1,0 +1,46 @@
+/*
+ 
+	 SimpleModal Basic Modal Dialog
+	 Copyright (c) 2013 Eric Martin - http://ericmmartin.com
+
+ 
+*/
+
+#basic-modal-content {
+	display:none;
+	}
+
+
+// Overlay
+
+#simplemodal-overlay {
+	background-color:#000;
+	}
+
+// Container
+
+#simplemodal-container {
+	height: 100px; 
+	width: 80%; 
+	background-color:  lighten($baseColour, 30%); 
+	padding: 18px 12px 8px 12px;
+
+	a.modalCloseImg {
+		background:url(../images/icons/close.png) no-repeat; 
+		width:40px; 
+		height:40px; 
+		display:inline; 
+		z-index:3200; 
+		position:absolute; 
+		top:-28px; 
+		right:-36px; 
+		cursor:pointer;
+		opacity: 0.6;
+		}
+	
+	a.modalCloseImg:hover {
+		opacity: 1;
+		}	
+	}	
+		
+

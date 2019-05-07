@@ -1,0 +1,74 @@
+/*
+	
+	Framework
+	
+	Style for page samples
+	
+*/
+
+.framework {
+
+	header {
+		
+		background-color: $accentColour;
+		//float: left;
+		clear: right;
+		margin-bottom: 30px;
+		padding: 16px 4% 26px;
+		
+			h1 {
+				color: #fff;
+				font-size: 1.6em;
+				}
+				
+			p {
+				color: lighten($accentColour, 28%);
+				margin-bottom: .6em;
+				
+				a {
+					color: lighten($accentColour, 28%); 
+					border: none;
+					
+					&:hover {
+						color: #fff;
+						}
+					
+					}
+			}	
+		
+		}
+		
+		
+	section.unit1 {
+		//clear: left;
+		//padding: 40px 4%;
+		
+		}
+		
+	code {
+		display: inline-block;
+		padding: 4px;
+		background-color: lighten($baseColour, 40%);
+
+		}	
+	
+	
+	ul.menuList {
+		
+		padding: 0;
+		
+		li {
+			
+			list-style: none;
+			margin-bottom: 4px;
+			
+			
+			@extend .arrow;
+				
+			
+			}
+		
+		}
+	
+	
+	}

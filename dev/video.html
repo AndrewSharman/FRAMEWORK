@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Table | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    
+  </head>
+
+	<body class="framework">
+		
+		<header class="unit1">
+		
+			<p><a href="../index.html">Framework</a></p>
+			
+			<h1>Responsive video</h1>
+			
+		</header>
+	
+		<section class="unit1">
+		
+				<p>Including defer loading script. (Needs to be loaded before JQuery)</p>
+
+				<div class="video-container">
+					
+					<iframe width="560" height="315" 
+					src="" 
+					data-src="https://www.youtube.com/embed/T8VLNymZ1Y4?rel=0&showinfo=0"
+					frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>					
+					
+				</div>	
+	
+		</section>
+		
+	<script>
+	function init() {
+	var vidDefer = document.getElementsByTagName('iframe');
+	for (var i=0; i<vidDefer.length; i++) {
+	if(vidDefer[i].getAttribute('data-src')) {
+	vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+	} } }
+	window.onload = init;
+	</script>	
+	
+	</body>
+<html>
+
+

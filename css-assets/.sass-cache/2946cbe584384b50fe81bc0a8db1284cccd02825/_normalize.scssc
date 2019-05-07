@@ -1,0 +1,969 @@
+3.4.2 (Selective Steve)
+c06c343c610c85974dba799f2715020e7cb335f2
+o:Sass::Tree::RootNode:@template"∑#
+/* 
+
+	normalize.css v1.1.3 | MIT License | git.io/normalize 
+	
+*/
+
+// ==========================================================================
+// HTML5 display definitions
+// ==========================================================================
+
+
+// Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+
+// Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+// Prevent modern browsers from displaying `audio` without controls.
+// Remove excess height in iOS 5 devices.
+
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+// Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+// Known issue: no IE 6 support.
+
+
+[hidden] {
+    display: none;
+}
+
+// ==========================================================================
+// Base
+// ==========================================================================
+
+
+// 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+//    `em` units.
+// 2. Prevent iOS text size adjust after orientation change, without disabling
+//    user zoom.
+
+
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+// Address `font-family` inconsistency between `textarea` and other form
+//* elements.
+
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+
+// Address margins handled incorrectly in IE 6/7.
+
+
+body {
+    margin: 0;
+}
+
+// ==========================================================================
+// Links
+// ==========================================================================
+
+// Address `outline` inconsistency between Chrome and other browsers.
+
+a {
+	text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+
+// Improve readability when focused and also mouse hovered in all browsers.
+
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+// ==========================================================================
+//   Typography
+// ========================================================================== 
+
+
+// Address font sizes and margins set differently in IE 6/7.
+// Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+// and Chrome.
+
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+//  Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+
+// Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+// Address styling not present in Safari 5 and Chrome.
+
+
+dfn {
+    font-style: italic;
+}
+
+
+// Address differences between Firefox and other browsers.
+// Known issue: no IE 6/7 normalization.
+
+/*
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+*/
+
+// Address styling not present in IE 6/7/8/9.
+
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+// Address margins set differently in IE 6/7.
+
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+
+// Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+
+// Improve readability of pre-formatted text in all browsers.
+
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+// Address CSS quotes not supported in IE 6/7.
+
+
+q {
+    quotes: none;
+}
+
+
+// Address `quotes` property not supported in Safari 4.
+
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+// Address inconsistent and variable font size in all browsers.
+
+
+small {
+    font-size: 80%;
+}
+
+
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+// ==========================================================================
+//   Lists
+//  ========================================================================== */
+
+// Address margins set differently in IE 6/7.
+
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+// Address paddings set differently in IE 6/7.
+
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+
+// Correct list images handled incorrectly in IE 7.
+
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+// ==========================================================================
+//   Embedded content
+// ==========================================================================
+
+
+// 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+// 2. Improve image quality when scaled in IE 7.
+
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+
+// Correct overflow displayed oddly in IE 9.
+
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+// ==========================================================================
+//   Figures
+//   ==========================================================================
+
+
+// Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+
+
+figure {
+    margin: 0;
+}
+
+// ==========================================================================
+//   Forms
+//  ==========================================================================
+
+
+// Correct margin displayed oddly in IE 6/7.
+
+
+form {
+    margin: 0;
+}
+
+
+// Define consistent border, margin, and padding.
+
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+
+// 1. Correct color not being inherited in IE 6/7/8/9.
+// 2. Correct text not wrapping in Firefox 3.
+// 3. Correct alignment displayed oddly in IE 6/7.
+
+
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px;
+}
+
+
+// 1. Correct font size not being inherited in all browsers.
+// 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+//    and Chrome.
+// 3. Improve appearance and consistency in all browsers.
+
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+
+// Address Firefox 3+ setting `line-height` on `input` using `!important` in
+// the UA stylesheet.
+
+
+button,
+input {
+    line-height: normal;
+}
+
+
+// Address inconsistent `text-transform` inheritance for `button` and `select`.
+// All other form control elements do not inherit `text-transform` values.
+// Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+// Correct `select` style inheritance in Firefox 4+ and Opera.
+
+
+button,
+select {
+    text-transform: none;
+}
+
+
+// 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+//    and `video` controls.
+// 2. Correct inability to style clickable `input` types in iOS.
+// 3. Improve usability and consistency of cursor style between image-type
+//    `input` and others.
+// 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+//    Known issue: inner spacing remains in IE 6.
+
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible;
+}
+
+
+// Re-set default cursor for disabled elements.
+
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+
+// 1. Address box sizing set to content-box in IE 8/9.
+// 2. Remove excess padding in IE 8/9.
+// 3. Remove excess padding in IE 7.
+//    Known issue: excess padding remains in IE 6.
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+}
+
+
+// 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+// 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+//    (include `-moz` to future-proof).
+
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+// Remove inner padding and search cancel button in Safari 5 and Chrome
+// on OS X.
+
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+   //  -webkit-appearance: none;
+}
+
+
+// Remove inner padding and border in Firefox 3+.
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+// 1. Remove default vertical scrollbar in IE 6/7/8/9.
+// 2. Improve readability and alignment in all browsers.
+
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+// ==========================================================================
+//   Tables
+//   ========================================================================== */
+
+
+// Remove most spacing between table cells.
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:@has_childrenT:@options{ :@children[mo:Sass::Tree::CommentNode
+:@value["F/* 
+
+	normalize.css v1.1.3 | MIT License | git.io/normalize 
+	
+*/;@;	[ :
+@linei:
+@type:normalo;
+
+;["ª/* ==========================================================================
+ * HTML5 display definitions
+ * ========================================================================== */;@;	[ ;i;:silento;
+
+;["K/* Correct `block` display not defined in IE 6/7/8/9 and Firefox 3. */;@;	[ ;i;;o:Sass::Tree::RuleNode:@selector_source_rangeo:Sass::Source::Range	:@start_poso:Sass::Source::Position:@offseti;i:@importero: Sass::Importers::Filesystem:@same_name_warningso:Set:
+@hash{ :@real_root"A/Users/andrew/WORK/WEB DEVELOPMENT/FRAMEWORK 2015/css-assets:
+@root"A/Users/andrew/WORK/WEB DEVELOPMENT/FRAMEWORK 2015/css-assets:
+@file"Q/Users/andrew/WORK/WEB DEVELOPMENT/FRAMEWORK 2015/css-assets/_normalize.scss:@end_poso;;i;i ;T:
+@rule["earticle,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary;@;	[o:Sass::Tree::PropNode:
+@name["display;o: Sass::Script::Tree::Literal;o: Sass::Script::Value::String;"
+block;@;:identifier;i!:@source_rangeo;	;o;;i;i!;@;@;o;;i;i!;@;	[ :@value_source_rangeo;	;o;;i;i!;@;@;o;;i;i!;i!:@prop_syntax:new:
+@tabsi :@name_source_rangeo;	;o;;i
+;i!;@;@;o;;i;i!;%o;	;@0;@;@;@.;i;)i ;%o;	;@;@;@;o;;i;i :@parsed_ruleso:"Sass::Selector::CommaSequence:@filename0:@members[o:Sass::Selector::Sequence;.[o:#Sass::Selector::SimpleSequence:@sourceso;;{ ;-0;.[o:Sass::Selector::Element	;!"article;-0:@namespace0;i;i;%o;	;o;;i;i;0;0;o;;i;i:@subject0o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+aside;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"details;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"figcaption;-0;30;i;i;%o;	;o;;i;i	;0;0;o;;i;i	;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"figure;-0;30;i;i;%o;	;o;;i;i
+;0;0;o;;i;i
+;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"footer;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"header;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"hgroup;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"	main;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i
+;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"nav;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i	;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"section;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"summary;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40;io;
+
+;["R/* Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3. */;@;	[ ;i%;;o;;o;	;o;;i;i(;@;@;o;;i;i*;T;["audio,
+canvas,
+video;@;	[o; ;!["display;o;";o;#;"inline-block;@;;$;i+;%o;	;o;;i;i+;@;@;o;;i;i+;@;	[ ;&o;	;o;;i;i+;@;@;o;;i;i+;i+;';(;)i ;*o;	;o;;i
+;i+;@;@;o;;i;i+;%o;	;@⁄;@;@;@ÿo; ;!["*display;o;";o;#;"inline;@;;$;i,;%o;	;o;;i;i,;@;@;o;;i;i,;@;	[ ;&o;	;o;;i;i,;@;@;o;;i;i,;i,;';(;)i ;*o;	;o;;i
+;i,;@;@;o;;i;i,;%o;	;@Î;@;@;@Èo; ;!["
+*zoom;o;";o;#;"1;@;;$;i-;%o;	;o;;i;i-;@;@;o;;i;i-;@;	[ ;&o;	;o;;i;i-;@;@;o;;i;i-;i-;';(;)i ;*o;	;o;;i
+;i-;@;@;o;;i;i-;%o;	;@¸;@;@;@˙;i(;)i ;%o;	;@«;@;@;o;;i;i*;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"
+audio;-0;30;i(;i(;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"canvas;-0;30;i(;i(;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+video;-0;30;i(;i(;%o;	;o;;i;i;0;0;o;;i;i;40;i(o;
+
+;["v/* Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices. */;@;	[ ;i0;;o;;o;	;o;;i;i4;@;@;o;;i;i4;T;["audio:not([controls]);@;	[o; ;!["display;o;";o;#;"	none;@;;$;i5;%o;	;o;;i;i5;@;@;o;;i;i5;@;	[ ;&o;	;o;;i;i5;@;@;o;;i;i5;i5;';(;)i ;*o;	;o;;i
+;i5;@;@;o;;i;i5;%o;	;@?;@;@;@=o; ;!["height;o;";o;#;"0;@;;$;i6;%o;	;o;;i;i6;@;@;o;;i;i6;@;	[ ;&o;	;o;;i;i6;@;@;o;;i;i6;i6;';(;)i ;*o;	;o;;i
+;i6;@;@;o;;i;i6;%o;	;@P;@;@;@N;i4;)i ;%o;	;@,;@;@;o;;i;i4;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"
+audio;-0;30;i4o:Sass::Selector::Pseudo:	@arg0;!"not:@syntactic_type:
+class:@selectoro;,;.[o;/;.[o;0	;1o;;{ ;.[o:Sass::Selector::Attribute
+:@flags0;!"controls;0:@operator0;30;%o;	;o;;i;i;0;0;o;;i;i;40;-0;i4;i4;%o;	;o;;i;i;0;0;o;;i;i;40;i4o;
+
+;["m/* Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support. */;@;	[ ;i9;;o;;o;	;o;;i;i=;@;@;o;;i;i=;T;["[hidden];@;	[o; ;!["display;o;";o;#;"	none;@;;$;i>;%o;	;o;;i;i>;@;@;o;;i;i>;@;	[ ;&o;	;o;;i;i>;@;@;o;;i;i>;i>;';(;)i ;*o;	;o;;i
+;i>;@;@;o;;i;i>;%o;	;@ä;@;@;@à;i=;)i ;%o;	;@w;@;@;o;;i;i=;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;:;;0;!"hidden;0;<0;-0;30;i=;i=;%o;	;o;;i;i;0;0;o;;i;i;40;i=o;
+
+;["¶/* ==========================================================================
+ * Base
+ * ========================================================================== */;@;	[ ;iA;;o;
+
+;["√/* 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom. */;@;	[ ;iF;;o;;o;	;o;;i;iL;@;@;o;;i;iL;T;["	html;@;	[o; ;!["font-size;o;";o;#;"	100%;@;;$;iM;%o;	;o;;i;iM;@;@;o;;i;iM;@;	[ ;&o;	;o;;i;iM;@;@;o;;i;iM;iM;';(;)i ;*o;	;o;;i
+;iM;@;@;o;;i;iM;%o;	;@π;@;@;@∑o; ;!["-ms-text-size-adjust;o;";o;#;"	100%;@;;$;iN;%o;	;o;;i ;iN;@;@;o;;i$;iN;@;	[ ;&o;	;o;;i ;iN;@;@;o;;i$;iN;iN;';(;)i ;*o;	;o;;i
+;iN;@;@;o;;i;iN;%o;	;@ ;@;@;@»o; ;!["-webkit-text-size-adjust;o;";o;#;"	100%;@;;$;iO;%o;	;o;;i$;iO;@;@;o;;i(;iO;@;	[ ;&o;	;o;;i$;iO;@;@;o;;i(;iO;iO;';(;)i ;*o;	;o;;i
+;iO;@;@;o;;i";iO;%o;	;@€;@;@;@Ÿ;iL;)i ;%o;	;@¶;@;@;o;;i;iL;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"	html;-0;30;iL;iL;%o;	;o;;i;i;0;0;o;;i
+;i;40;iLo;
+
+;["^/* Address `font-family` inconsistency between `textarea` and other form
+ ** elements. */;@;	[ ;iS;;o;;o;	;o;;i;iW;@;@;o;;i;i[;T;["*html,
+button,
+input,
+select,
+textarea;@;	[o; ;!["font-family;o;";o;#;"sans-serif;@;;$;i\;%o;	;o;;i;i\;@;@;o;;i!;i\;@;	[ ;&o;	;o;;i;i\;@;@;o;;i!;i\;i\;';(;)i ;*o;	;o;;i
+;i\;@;@;o;;i;i\;%o;	;@;@;@;@;iW;)i ;%o;	;@Û;@;@;o;;i;i[;+o;,;-0;.[
+o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"	html;-0;30;iW;iW;%o;	;o;;i;i;0;0;o;;i
+;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"button;-0;30;iW;iW;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iW;iW;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"select;-0;30;iW;iW;%o;	;o;;i;i	;0;0;o;;i;i	;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"textarea;-0;30;iW;iW;%o;	;o;;i;i
+;0;0;o;;i;i
+;40;iWo;
+
+;["9/* Address margins handled incorrectly in IE 6/7. */;@;	[ ;i`;;o;;o;	;o;;i;ic;@;@;o;;i;ic;T;["	body;@;	[o; ;!["margin;o;";o;#;"0;@;;$;id;%o;	;o;;i;id;@;@;o;;i;id;@;	[ ;&o;	;o;;i;id;@;@;o;;i;id;id;';(;)i ;*o;	;o;;i
+;id;@;@;o;;i;id;%o;	;@a;@;@;@_;ic;)i ;%o;	;@N;@;@;o;;i;ic;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"	body;-0;30;ic;ic;%o;	;o;;i;i;0;0;o;;i
+;i;40;ico;
+
+;["ß/* ==========================================================================
+ * Links
+ * ========================================================================== */;@;	[ ;ig;;o;
+
+;["M/* Address `outline` inconsistency between Chrome and other browsers. */;@;	[ ;ik;;o;;o;	;o;;i;im;@;@;o;;i;im;T;["a;@;	[o; ;!["text-decoration;o;";o;#;"	none;@;;$;in;%o;	;o;;i;in;@;@;o;;i;in;@;	[ ;&o;	;o;;i;in;@;@;o;;i;in;in;';(;)i ;*o;	;o;;i;in;@;@;o;;i;in;%o;	;@ê;@;@;@é;im;)i ;%o;	;@};@;@;o;;i;im;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"a;-0;30;im;im;%o;	;o;;i;i;0;0;o;;i;i;40;imo;;o;	;o;;i;iq;@;@;o;;i;iq;T;["a:focus;@;	[o; ;!["outline;o;";o;#;"	none;@;;$;ir;%o;	;o;;i;ir;@;@;o;;i;ir;@;	[ ;&o;	;o;;i;ir;@;@;o;;i;ir;ir;';(;)i ;*o;	;o;;i
+;ir;@;@;o;;i;ir;%o;	;@∑;@;@;@µ;iq;)i ;%o;	;@§;@;@;o;;i;iq;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"a;-0;30;iqo;5;60;!"
+focus;7;8;90;-0;iq;iq;%o;	;o;;i;i;0;0;o;;i;i;40;iqo;
+
+;["S/* Improve readability when focused and also mouse hovered in all browsers. */;@;	[ ;iv;;o;;o;	;o;;i;iy;@;@;o;;i;iz;T;["a:active,
+a:hover;@;	[o; ;!["outline;o;";o;#;"0;@;;$;i{;%o;	;o;;i;i{;@;@;o;;i;i{;@;	[ ;&o;	;o;;i;i{;@;@;o;;i;i{;i{;';(;)i ;*o;	;o;;i
+;i{;@;@;o;;i;i{;%o;	;@‰;@;@;@‚;iy;)i ;%o;	;@—;@;@;o;;i;iz;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"a;-0;30;iyo;5;60;!"active;7;8;90;-0;iy;iy;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"a;-0;30;iyo;5;60;!"
+hover;7;8;90;-0;iy;iy;%o;	;o;;i;i;0;0;o;;i;i;40;iyo;
+
+;["Ø/* ==========================================================================
+ *   Typography
+ * ==========================================================================  */;@;	[ ;i~;;o;
+
+;["ú/* Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome. */;@;	[ ;i~;;o;;o;	;o;;i;iÉ;@;@;o;;i	;iÉ;T;["h1;@;	[o; ;!["font-size;o;";o;#;"2em;@;;$;iÑ;%o;	;o;;i;iÑ;@;@;o;;i;iÑ;@;	[ ;&o;	;o;;i;iÑ;@;@;o;;i;iÑ;iÑ;';(;)i ;*o;	;o;;i
+;iÑ;@;@;o;;i;iÑ;%o;	;@#;@;@;@!o; ;!["margin;o;";o;#;"0.67em 0;@;;$;iÖ;%o;	;o;;i;iÖ;@;@;o;;i;iÖ;@;	[ ;&o;	;o;;i;iÖ;@;@;o;;i;iÖ;iÖ;';(;)i ;*o;	;o;;i
+;iÖ;@;@;o;;i;iÖ;%o;	;@4;@;@;@2;iÉ;)i ;%o;	;@;@;@;o;;i	;iÉ;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"h1;-0;30;iÉ;iÉ;%o;	;o;;i;i;0;0;o;;i;i;40;iÉo;;o;	;o;;i;ià;@;@;o;;i	;ià;T;["h2;@;	[o; ;!["font-size;o;";o;#;"
+1.5em;@;;$;iâ;%o;	;o;;i;iâ;@;@;o;;i;iâ;@;	[ ;&o;	;o;;i;iâ;@;@;o;;i;iâ;iâ;';(;)i ;*o;	;o;;i
+;iâ;@;@;o;;i;iâ;%o;	;@[;@;@;@Yo; ;!["margin;o;";o;#;"0.83em 0;@;;$;iä;%o;	;o;;i;iä;@;@;o;;i;iä;@;	[ ;&o;	;o;;i;iä;@;@;o;;i;iä;iä;';(;)i ;*o;	;o;;i
+;iä;@;@;o;;i;iä;%o;	;@l;@;@;@j;ià;)i ;%o;	;@H;@;@;o;;i	;ià;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"h2;-0;30;ià;ià;%o;	;o;;i;i;0;0;o;;i;i;40;iào;;o;	;o;;i;iç;@;@;o;;i	;iç;T;["h3;@;	[o; ;!["font-size;o;";o;#;"1.17em;@;;$;ié;%o;	;o;;i;ié;@;@;o;;i;ié;@;	[ ;&o;	;o;;i;ié;@;@;o;;i;ié;ié;';(;)i ;*o;	;o;;i
+;ié;@;@;o;;i;ié;%o;	;@ì;@;@;@ëo; ;!["margin;o;";o;#;"
+1em 0;@;;$;iè;%o;	;o;;i;iè;@;@;o;;i;iè;@;	[ ;&o;	;o;;i;iè;@;@;o;;i;iè;iè;';(;)i ;*o;	;o;;i
+;iè;@;@;o;;i;iè;%o;	;@§;@;@;@¢;iç;)i ;%o;	;@Ä;@;@;o;;i	;iç;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"h3;-0;30;iç;iç;%o;	;o;;i;i;0;0;o;;i;i;40;iço;;o;	;o;;i;ií;@;@;o;;i	;ií;T;["h4;@;	[o; ;!["font-size;o;";o;#;"1em;@;;$;iì;%o;	;o;;i;iì;@;@;o;;i;iì;@;	[ ;&o;	;o;;i;iì;@;@;o;;i;iì;iì;';(;)i ;*o;	;o;;i
+;iì;@;@;o;;i;iì;%o;	;@À;@;@;@…o; ;!["margin;o;";o;#;"1.33em 0;@;;$;iî;%o;	;o;;i;iî;@;@;o;;i;iî;@;	[ ;&o;	;o;;i;iî;@;@;o;;i;iî;iî;';(;)i ;*o;	;o;;i
+;iî;@;@;o;;i;iî;%o;	;@‹;@;@;@⁄;ií;)i ;%o;	;@∏;@;@;o;;i	;ií;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"h4;-0;30;ií;ií;%o;	;o;;i;i;0;0;o;;i;i;40;iío;;o;	;o;;i;ió;@;@;o;;i	;ió;T;["h5;@;	[o; ;!["font-size;o;";o;#;"0.83em;@;;$;iò;%o;	;o;;i;iò;@;@;o;;i;iò;@;	[ ;&o;	;o;;i;iò;@;@;o;;i;iò;iò;';(;)i ;*o;	;o;;i
+;iò;@;@;o;;i;iò;%o;	;@;@;@;@o; ;!["margin;o;";o;#;"1.67em 0;@;;$;iô;%o;	;o;;i;iô;@;@;o;;i;iô;@;	[ ;&o;	;o;;i;iô;@;@;o;;i;iô;iô;';(;)i ;*o;	;o;;i
+;iô;@;@;o;;i;iô;%o;	;@;@;@;@;ió;)i ;%o;	;@;@;@;o;;i	;ió;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"h5;-0;30;ió;ió;%o;	;o;;i;i;0;0;o;;i;i;40;ióo;;o;	;o;;i;iú;@;@;o;;i	;iú;T;["h6;@;	[o; ;!["font-size;o;";o;#;"0.67em;@;;$;iù;%o;	;o;;i;iù;@;@;o;;i;iù;@;	[ ;&o;	;o;;i;iù;@;@;o;;i;iù;iù;';(;)i ;*o;	;o;;i
+;iù;@;@;o;;i;iù;%o;	;@;;@;@;@9o; ;!["margin;o;";o;#;"2.33em 0;@;;$;iû;%o;	;o;;i;iû;@;@;o;;i;iû;@;	[ ;&o;	;o;;i;iû;@;@;o;;i;iû;iû;';(;)i ;*o;	;o;;i
+;iû;@;@;o;;i;iû;%o;	;@L;@;@;@J;iú;)i ;%o;	;@(;@;@;o;;i	;iú;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"h6;-0;30;iú;iú;%o;	;o;;i;i;0;0;o;;i;i;40;iúo;
+
+;["J/*  Address styling not present in IE 7/8/9, Safari 5, and Chrome. */;@;	[ ;i°;;o;;o;	;o;;i;i§;@;@;o;;i;i§;T;["abbr[title];@;	[o; ;!["border-bottom;o;";o;#;"1px dotted;@;;$;i•;%o;	;o;;i;i•;@;@;o;;i#;i•;@;	[ ;&o;	;o;;i;i•;@;@;o;;i#;i•;i•;';(;)i ;*o;	;o;;i
+;i•;@;@;o;;i;i•;%o;	;@w;@;@;@u;i§;)i ;%o;	;@d;@;@;o;;i;i§;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"	abbr;-0;30;i§o;:;;0;!"
+title;0;<0;-0;30;i§;i§;%o;	;o;;i;i;0;0;o;;i;i;40;i§o;
+
+;["O/* Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */;@;	[ ;i©;;o;;o;	;o;;i;i¨;@;@;o;;i;i≠;T;["b,
+strong;@;	[o; ;!["font-weight;o;";o;#;"	bold;@;;$;iÆ;%o;	;o;;i;iÆ;@;@;o;;i;iÆ;@;	[ ;&o;	;o;;i;iÆ;@;@;o;;i;iÆ;iÆ;';(;)i ;*o;	;o;;i
+;iÆ;@;@;o;;i;iÆ;%o;	;@§;@;@;@¢;i¨;)i ;%o;	;@ë;@;@;o;;i;i≠;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"b;-0;30;i¨;i¨;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"strong;-0;30;i¨;i¨;%o;	;o;;i;i;0;0;o;;i;i;40;i¨o;;o;	;o;;i;i±;@;@;o;;i;i±;T;["blockquote;@;	[o; ;!["margin;o;";o;#;"1em 40px;@;;$;i≤;%o;	;o;;i;i≤;@;@;o;;i;i≤;@;	[ ;&o;	;o;;i;i≤;@;@;o;;i;i≤;i≤;';(;)i ;*o;	;o;;i
+;i≤;@;@;o;;i;i≤;%o;	;@◊;@;@;@’;i±;)i ;%o;	;@ƒ;@;@;o;;i;i±;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"blockquote;-0;30;i±;i±;%o;	;o;;i;i;0;0;o;;i;i;40;i±o;
+
+;[">/* Address styling not present in Safari 5 and Chrome. */;@;	[ ;iµ;;o;;o;	;o;;i;i∏;@;@;o;;i
+;i∏;T;["dfn;@;	[o; ;!["font-style;o;";o;#;"italic;@;;$;iπ;%o;	;o;;i;iπ;@;@;o;;i;iπ;@;	[ ;&o;	;o;;i;iπ;@;@;o;;i;iπ;iπ;';(;)i ;*o;	;o;;i
+;iπ;@;@;o;;i;iπ;%o;	;@;@;@;@ ;i∏;)i ;%o;	;@Ô;@;@;o;;i
+;i∏;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"dfn;-0;30;i∏;i∏;%o;	;o;;i;i;0;0;o;;i	;i;40;i∏o;
+
+;["k/* Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization. */;@;	[ ;iΩ;;o;
+
+;["_/*
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+*/;@;	[ ;i¿;;o;
+
+;["5/* Address styling not present in IE 6/7/8/9. */;@;	[ ;i»;;o;;o;	;o;;i;iÀ;@;@;o;;i;iÀ;T;["	mark;@;	[o; ;!["background;o;";o;#;"	#ff0;@;;$;iÃ;%o;	;o;;i;iÃ;@;@;o;;i;iÃ;@;	[ ;&o;	;o;;i;iÃ;@;@;o;;i;iÃ;iÃ;';(;)i ;*o;	;o;;i
+;iÃ;@;@;o;;i;iÃ;%o;	;@5;@;@;@3o; ;!["
+color;o;";o;#;"	#000;@;;$;iÕ;%o;	;o;;i;iÕ;@;@;o;;i;iÕ;@;	[ ;&o;	;o;;i;iÕ;@;@;o;;i;iÕ;iÕ;';(;)i ;*o;	;o;;i
+;iÕ;@;@;o;;i;iÕ;%o;	;@F;@;@;@D;iÀ;)i ;%o;	;@";@;@;o;;i;iÀ;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"	mark;-0;30;iÀ;iÀ;%o;	;o;;i;i;0;0;o;;i
+;i;40;iÀo;
+
+;["5/* Address margins set differently in IE 6/7. */;@;	[ ;i—;;o;;o;	;o;;i;i‘;@;@;o;;i
+;i’;T;["p,
+pre;@;	[o; ;!["margin;o;";o;#;"
+1em 0;@;;$;i÷;%o;	;o;;i;i÷;@;@;o;;i;i÷;@;	[ ;&o;	;o;;i;i÷;@;@;o;;i;i÷;i÷;';(;)i ;*o;	;o;;i
+;i÷;@;@;o;;i;i÷;%o;	;@q;@;@;@o;i‘;)i ;%o;	;@^;@;@;o;;i
+;i’;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"p;-0;30;i‘;i‘;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"pre;-0;30;i‘;i‘;%o;	;o;;i;i;0;0;o;;i	;i;40;i‘o;
+
+;["I/* Correct font family set oddly in IE 6, Safari 4/5, and Chrome. */;@;	[ ;i⁄;;o;;o;	;o;;i;i›;@;@;o;;i;i‡;T;["code,
+kbd,
+pre,
+samp;@;	[o; ;!["font-family;o;";o;#;"monospace, serif;@;;$;i·;%o;	;o;;i;i·;@;@;o;;i';i·;@;	[ ;&o;	;o;;i;i·;@;@;o;;i';i·;i·;';(;)i ;*o;	;o;;i
+;i·;@;@;o;;i;i·;%o;	;@®;@;@;@¶o; ;!["_font-family;o;";o;#;"'courier new', monospace;@;;$;i‚;%o;	;o;;i;i‚;@;@;o;;i0;i‚;@;	[ ;&o;	;o;;i;i‚;@;@;o;;i0;i‚;i‚;';(;)i ;*o;	;o;;i
+;i‚;@;@;o;;i;i‚;%o;	;@π;@;@;@∑o; ;!["font-size;o;";o;#;"1em;@;;$;i„;%o;	;o;;i;i„;@;@;o;;i;i„;@;	[ ;&o;	;o;;i;i„;@;@;o;;i;i„;i„;';(;)i ;*o;	;o;;i
+;i„;@;@;o;;i;i„;%o;	;@ ;@;@;@»;i›;)i ;%o;	;@ï;@;@;o;;i;i‡;+o;,;-0;.[	o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"	code;-0;30;i›;i›;%o;	;o;;i;i;0;0;o;;i
+;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"kbd;-0;30;i›;i›;%o;	;o;;i;i;0;0;o;;i	;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"pre;-0;30;i›;i›;%o;	;o;;i;i;0;0;o;;i	;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"	samp;-0;30;i›;i›;%o;	;o;;i;i	;0;0;o;;i
+;i	;40;i›o;
+
+;["E/* Improve readability of pre-formatted text in all browsers. */;@;	[ ;iÁ;;o;;o;	;o;;i;iÍ;@;@;o;;i
+;iÍ;T;["pre;@;	[o; ;!["white-space;o;";o;#;"pre;@;;$;iÎ;%o;	;o;;i;iÎ;@;@;o;;i;iÎ;@;	[ ;&o;	;o;;i;iÎ;@;@;o;;i;iÎ;iÎ;';(;)i ;*o;	;o;;i
+;iÎ;@;@;o;;i;iÎ;%o;	;@;@;@;@o; ;!["white-space;o;";o;#;"pre-wrap;@;;$;iÏ;%o;	;o;;i;iÏ;@;@;o;;i;iÏ;@;	[ ;&o;	;o;;i;iÏ;@;@;o;;i;iÏ;iÏ;';(;)i ;*o;	;o;;i
+;iÏ;@;@;o;;i;iÏ;%o;	;@*;@;@;@(o; ;!["word-wrap;o;";o;#;"break-word;@;;$;iÌ;%o;	;o;;i;iÌ;@;@;o;;i;iÌ;@;	[ ;&o;	;o;;i;iÌ;@;@;o;;i;iÌ;iÌ;';(;)i ;*o;	;o;;i
+;iÌ;@;@;o;;i;iÌ;%o;	;@;;@;@;@9;iÍ;)i ;%o;	;@;@;@;o;;i
+;iÍ;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"pre;-0;30;iÍ;iÍ;%o;	;o;;i;i;0;0;o;;i	;i;40;iÍo;
+
+;["6/* Address CSS quotes not supported in IE 6/7. */;@;	[ ;iÒ;;o;;o;	;o;;i;iÙ;@;@;o;;i;iÙ;T;["q;@;	[o; ;!["quotes;o;";o;#;"	none;@;;$;iı;%o;	;o;;i;iı;@;@;o;;i;iı;@;	[ ;&o;	;o;;i;iı;@;@;o;;i;iı;iı;';(;)i ;*o;	;o;;i
+;iı;@;@;o;;i;iı;%o;	;@f;@;@;@d;iÙ;)i ;%o;	;@S;@;@;o;;i;iÙ;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"q;-0;30;iÙ;iÙ;%o;	;o;;i;i;0;0;o;;i;i;40;iÙo;
+
+;["?/* Address `quotes` property not supported in Safari 4. */;@;	[ ;i˘;;o;;o;	;o;;i;i¸;@;@;o;;i;i˝;T;["q:before,
+q:after;@;	[o; ;!["content;o;";o;#;"'';@;;$;i˛;%o;	;o;;i;i˛;@;@;o;;i;i˛;@;	[ ;&o;	;o;;i;i˛;@;@;o;;i;i˛;i˛;';(;)i ;*o;	;o;;i
+;i˛;@;@;o;;i;i˛;%o;	;@ë;@;@;@èo; ;!["content;o;";o;#;"	none;@;;$;iˇ;%o;	;o;;i;iˇ;@;@;o;;i;iˇ;@;	[ ;&o;	;o;;i;iˇ;@;@;o;;i;iˇ;iˇ;';(;)i ;*o;	;o;;i
+;iˇ;@;@;o;;i;iˇ;%o;	;@¢;@;@;@†;i¸;)i ;%o;	;@~;@;@;o;;i;i˝;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"q;-0;30;i¸o;5;60;!"before;7;8;90;-0;i¸;i¸;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"q;-0;30;i¸o;5;60;!"
+after;7;8;90;-0;i¸;i¸;%o;	;o;;i;i;0;0;o;;i;i;40;i¸o;
+
+;["G/* Address inconsistent and variable font size in all browsers. */;@;	[ ;i;;o;;o;	;o;;i;i;@;@;o;;i;i;T;["
+small;@;	[o; ;!["font-size;o;";o;#;"80%;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@›;@;@;@€;i;)i ;%o;	;@ ;@;@;o;;i;i;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"
+small;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40;io;
+
+;["K/* Prevent `sub` and `sup` affecting `line-height` in all browsers. */;@;	[ ;i;;o;;o;	;o;;i;i;@;@;o;;i
+;i;T;["sub,
+sup;@;	[	o; ;!["font-size;o;";o;#;"75%;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@;@;@;@o; ;!["line-height;o;";o;#;"0;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@;@;@;@o; ;!["position;o;";o;#;"relative;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@*;@;@;@(o; ;!["vertical-align;o;";o;#;"baseline;@;;$;i;%o;	;o;;i;i;@;@;o;;i";i;@;	[ ;&o;	;o;;i;i;@;@;o;;i";i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@;;@;@;@9;i;)i ;%o;	;@ı;@;@;o;;i
+;i;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"sub;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i	;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"sup;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i	;i;40;io;;o;	;o;;i;i;@;@;o;;i
+;i;T;["sup;@;	[o; ;!["top;o;";o;#;"-0.5em;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@n;@;@;@l;i;)i ;%o;	;@[;@;@;o;;i
+;i;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"sup;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i	;i;40;io;;o;	;o;;i;i;@;@;o;;i
+;i;T;["sub;@;	[o; ;!["bottom;o;";o;#;"-0.25em;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@ï;@;@;@ì;i;)i ;%o;	;@Ç;@;@;o;;i
+;i;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"sub;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i	;i;40;io;
+
+;["≠/* ==========================================================================
+ *   Lists
+ *  ========================================================================== */ */;@;	[ ;i;;o;
+
+;["5/* Address margins set differently in IE 6/7. */;@;	[ ;i";;o;;o;	;o;;i;i%;@;@;o;;i	;i(;T;["dl,
+menu,
+ol,
+ul;@;	[o; ;!["margin;o;";o;#;"
+1em 0;@;;$;i);%o;	;o;;i;i);@;@;o;;i;i);@;	[ ;&o;	;o;;i;i);@;@;o;;i;i);i);';(;)i ;*o;	;o;;i
+;i);@;@;o;;i;i);%o;	;@ƒ;@;@;@¬;i%;)i ;%o;	;@±;@;@;o;;i	;i(;+o;,;-0;.[	o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"dl;-0;30;i%;i%;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"	menu;-0;30;i%;i%;%o;	;o;;i;i;0;0;o;;i
+;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"ol;-0;30;i%;i%;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"ul;-0;30;i%;i%;%o;	;o;;i;i	;0;0;o;;i;i	;40;i%o;;o;	;o;;i;i,;@;@;o;;i	;i,;T;["dd;@;	[o; ;!["margin;o;";o;#;"0 0 0 40px;@;;$;i-;%o;	;o;;i;i-;@;@;o;;i;i-;@;	[ ;&o;	;o;;i;i-;@;@;o;;i;i-;i-;';(;)i ;*o;	;o;;i
+;i-;@;@;o;;i;i-;%o;	;@;@;@;@;i,;)i ;%o;	;@¸;@;@;o;;i	;i,;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"dd;-0;30;i,;i,;%o;	;o;;i;i;0;0;o;;i;i;40;i,o;
+
+;["6/* Address paddings set differently in IE 6/7. */;@;	[ ;i0;;o;;o;	;o;;i;i3;@;@;o;;i	;i5;T;["menu,
+ol,
+ul;@;	[o; ;!["padding;o;";o;#;"0 0 0 40px;@;;$;i6;%o;	;o;;i;i6;@;@;o;;i;i6;@;	[ ;&o;	;o;;i;i6;@;@;o;;i;i6;i6;';(;)i ;*o;	;o;;i
+;i6;@;@;o;;i;i6;%o;	;@:;@;@;@8;i3;)i ;%o;	;@';@;@;o;;i	;i5;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"	menu;-0;30;i3;i3;%o;	;o;;i;i;0;0;o;;i
+;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"ol;-0;30;i3;i3;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"ul;-0;30;i3;i3;%o;	;o;;i;i;0;0;o;;i;i;40;i3o;
+
+;[";/* Correct list images handled incorrectly in IE 7. */;@;	[ ;i:;;o;;o;	;o;;i;i=;@;@;o;;i;i>;T;["nav ul,
+nav ol;@;	[o; ;!["list-style;o;";o;#;"	none;@;;$;i?;%o;	;o;;i;i?;@;@;o;;i;i?;@;	[ ;&o;	;o;;i;i?;@;@;o;;i;i?;i?;';(;)i ;*o;	;o;;i
+;i?;@;@;o;;i;i?;%o;	;@};@;@;@{o; ;!["list-style-image;o;";o;#;"	none;@;;$;i@;%o;	;o;;i;i@;@;@;o;;i ;i@;@;	[ ;&o;	;o;;i;i@;@;@;o;;i ;i@;i@;';(;)i ;*o;	;o;;i
+;i@;@;@;o;;i;i@;%o;	;@é;@;@;@å;i=;)i ;%o;	;@j;@;@;o;;i;i>;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"nav;-0;30;i=;i=;%o;	;o;;i;i;0;0;o;;i	;i;40o;0;1o;;{ ;-0;.[o;2	;!"ul;-0;30;i=;i=;%o;	;o;;i
+;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"nav;-0;30;i=;i=;%o;	;o;;i;i;0;0;o;;i	;i;40o;0;1o;;{ ;-0;.[o;2	;!"ol;-0;30;i=;i=;%o;	;o;;i
+;i;0;0;o;;i;i;40;i=o;
+
+;["¥/* ==========================================================================
+ *   Embedded content
+ * ========================================================================== */;@;	[ ;iC;;o;
+
+;["|/* 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7. */;@;	[ ;iH;;o;;o;	;o;;i;iL;@;@;o;;i
+;iL;T;["img;@;	[o; ;!["border;o;";o;#;"0;@;;$;iM;%o;	;o;;i;iM;@;@;o;;i;iM;@;	[ ;&o;	;o;;i;iM;@;@;o;;i;iM;iM;';(;)i ;*o;	;o;;i
+;iM;@;@;o;;i;iM;%o;	;@€;@;@;@Ÿo; ;!["-ms-interpolation-mode;o;";o;#;"bicubic;@;;$;iN;%o;	;o;;i";iN;@;@;o;;i);iN;@;	[ ;&o;	;o;;i";iN;@;@;o;;i);iN;iN;';(;)i ;*o;	;o;;i
+;iN;@;@;o;;i ;iN;%o;	;@Ï;@;@;@Í;iL;)i ;%o;	;@»;@;@;o;;i
+;iL;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"img;-0;30;iL;iL;%o;	;o;;i;i;0;0;o;;i	;i;40;iLo;
+
+;["4/* Correct overflow displayed oddly in IE 9. */;@;	[ ;iR;;o;;o;	;o;;i;iU;@;@;o;;i;iU;T;["svg:not(:root);@;	[o; ;!["overflow;o;";o;#;"hidden;@;;$;iV;%o;	;o;;i;iV;@;@;o;;i;iV;@;	[ ;&o;	;o;;i;iV;@;@;o;;i;iV;iV;';(;)i ;*o;	;o;;i
+;iV;@;@;o;;i;iV;%o;	;@	;@;@;@	;iU;)i ;%o;	;@	;@;@;o;;i;iU;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"svg;-0;30;iUo;5;60;!"not;7;8;9o;,;.[o;/;.[o;0	;1o;;{ ;.[o;5	;60;!"	root;7;8;90;%o;	;o;;i;i;0;0;o;;i;i;40;-0;iU;iU;%o;	;o;;i;i;0;0;o;;i;i;40;iUo;
+
+;["≠/* ==========================================================================
+ *   Figures
+ *   ========================================================================== */;@;	[ ;iY;;o;
+
+;["L/* Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11. */;@;	[ ;i^;;o;;o;	;o;;i;ia;@;@;o;;i;ia;T;["figure;@;	[o; ;!["margin;o;";o;#;"0;@;;$;ib;%o;	;o;;i;ib;@;@;o;;i;ib;@;	[ ;&o;	;o;;i;ib;@;@;o;;i;ib;ib;';(;)i ;*o;	;o;;i
+;ib;@;@;o;;i;ib;%o;	;@U	;@;@;@S	;ia;)i ;%o;	;@B	;@;@;o;;i;ia;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"figure;-0;30;ia;ia;%o;	;o;;i;i;0;0;o;;i;i;40;iao;
+
+;["™/* ==========================================================================
+ *   Forms
+ *  ========================================================================== */;@;	[ ;ie;;o;
+
+;["4/* Correct margin displayed oddly in IE 6/7. */;@;	[ ;ij;;o;;o;	;o;;i;im;@;@;o;;i;im;T;["	form;@;	[o; ;!["margin;o;";o;#;"0;@;;$;in;%o;	;o;;i;in;@;@;o;;i;in;@;	[ ;&o;	;o;;i;in;@;@;o;;i;in;in;';(;)i ;*o;	;o;;i
+;in;@;@;o;;i;in;%o;	;@Ñ	;@;@;@Ç	;im;)i ;%o;	;@q	;@;@;o;;i;im;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"	form;-0;30;im;im;%o;	;o;;i;i;0;0;o;;i
+;i;40;imo;
+
+;["9/* Define consistent border, margin, and padding. */;@;	[ ;ir;;o;;o;	;o;;i;iu;@;@;o;;i;iu;T;["fieldset;@;	[o; ;!["border;o;";o;#;"1px solid #c0c0c0;@;;$;iv;%o;	;o;;i;iv;@;@;o;;i#;iv;@;	[ ;&o;	;o;;i;iv;@;@;o;;i#;iv;iv;';(;)i ;*o;	;o;;i
+;iv;@;@;o;;i;iv;%o;	;@Ø	;@;@;@≠	o; ;!["margin;o;";o;#;"
+0 2px;@;;$;iw;%o;	;o;;i;iw;@;@;o;;i;iw;@;	[ ;&o;	;o;;i;iw;@;@;o;;i;iw;iw;';(;)i ;*o;	;o;;i
+;iw;@;@;o;;i;iw;%o;	;@¿	;@;@;@æ	o; ;!["padding;o;";o;#;"0.35em 0.625em 0.75em;@;;$;ix;%o;	;o;;i;ix;@;@;o;;i(;ix;@;	[ ;&o;	;o;;i;ix;@;@;o;;i(;ix;ix;';(;)i ;*o;	;o;;i
+;ix;@;@;o;;i;ix;%o;	;@—	;@;@;@œ	;iu;)i ;%o;	;@ú	;@;@;o;;i;iu;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"fieldset;-0;30;iu;iu;%o;	;o;;i;i;0;0;o;;i;i;40;iuo;
+
+;["ö/* 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7. */;@;	[ ;i|;;o;;o;	;o;;i;iÅ;@;@;o;;i;iÅ;T;["legend;@;	[	o; ;!["border;o;";o;#;"0;@;;$;iÇ;%o;	;o;;i;iÇ;@;@;o;;i;iÇ;@;	[ ;&o;	;o;;i;iÇ;@;@;o;;i;iÇ;iÇ;';(;)i ;*o;	;o;;i
+;iÇ;@;@;o;;i;iÇ;%o;	;@¸	;@;@;@˙	o; ;!["padding;o;";o;#;"0;@;;$;iÉ;%o;	;o;;i;iÉ;@;@;o;;i;iÉ;@;	[ ;&o;	;o;;i;iÉ;@;@;o;;i;iÉ;iÉ;';(;)i ;*o;	;o;;i
+;iÉ;@;@;o;;i;iÉ;%o;	;@
+;@;@;@
+o; ;!["white-space;o;";o;#;"normal;@;;$;iÑ;%o;	;o;;i;iÑ;@;@;o;;i;iÑ;@;	[ ;&o;	;o;;i;iÑ;@;@;o;;i;iÑ;iÑ;';(;)i ;*o;	;o;;i
+;iÑ;@;@;o;;i;iÑ;%o;	;@
+;@;@;@
+o; ;!["*margin-left;o;";o;#;"	-7px;@;;$;iÖ;%o;	;o;;i;iÖ;@;@;o;;i;iÖ;@;	[ ;&o;	;o;;i;iÖ;@;@;o;;i;iÖ;iÖ;';(;)i ;*o;	;o;;i
+;iÖ;@;@;o;;i;iÖ;%o;	;@/
+;@;@;@-
+;iÅ;)i ;%o;	;@È	;@;@;o;;i;iÅ;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"legend;-0;30;iÅ;iÅ;%o;	;o;;i;i;0;0;o;;i;i;40;iÅo;
+
+;["“/* 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers. */;@;	[ ;iâ;;o;;o;	;o;;i;iè;@;@;o;;i;ií;T;["$button,
+input,
+select,
+textarea;@;	[	o; ;!["font-size;o;";o;#;"	100%;@;;$;iì;%o;	;o;;i;iì;@;@;o;;i;iì;@;	[ ;&o;	;o;;i;iì;@;@;o;;i;iì;iì;';(;)i ;*o;	;o;;i
+;iì;@;@;o;;i;iì;%o;	;@Z
+;@;@;@X
+o; ;!["margin;o;";o;#;"0;@;;$;iî;%o;	;o;;i;iî;@;@;o;;i;iî;@;	[ ;&o;	;o;;i;iî;@;@;o;;i;iî;iî;';(;)i ;*o;	;o;;i
+;iî;@;@;o;;i;iî;%o;	;@k
+;@;@;@i
+o; ;!["vertical-align;o;";o;#;"baseline;@;;$;iï;%o;	;o;;i;iï;@;@;o;;i";iï;@;	[ ;&o;	;o;;i;iï;@;@;o;;i";iï;iï;';(;)i ;*o;	;o;;i
+;iï;@;@;o;;i;iï;%o;	;@|
+;@;@;@z
+o; ;!["*vertical-align;o;";o;#;"middle;@;;$;iñ;%o;	;o;;i;iñ;@;@;o;;i!;iñ;@;	[ ;&o;	;o;;i;iñ;@;@;o;;i!;iñ;iñ;';(;)i ;*o;	;o;;i
+;iñ;@;@;o;;i;iñ;%o;	;@ç
+;@;@;@ã
+;iè;)i ;%o;	;@G
+;@;@;o;;i;ií;+o;,;-0;.[	o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"button;-0;30;iè;iè;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iè;iè;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"select;-0;30;iè;iè;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"textarea;-0;30;iè;iè;%o;	;o;;i;i	;0;0;o;;i;i	;40;ièo;
+
+;["j/* Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet. */;@;	[ ;iö;;o;;o;	;o;;i;iû;@;@;o;;i;iü;T;["button,
+input;@;	[o; ;!["line-height;o;";o;#;"normal;@;;$;i†;%o;	;o;;i;i†;@;@;o;;i;i†;@;	[ ;&o;	;o;;i;i†;@;@;o;;i;i†;i†;';(;)i ;*o;	;o;;i
+;i†;@;@;o;;i;i†;%o;	;@‹
+;@;@;@⁄
+;iû;)i ;%o;	;@…
+;@;@;o;;i;iü;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"button;-0;30;iû;iû;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iû;iû;%o;	;o;;i;i;0;0;o;;i;i;40;iûo;
+
+;["#/* Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera. */;@;	[ ;i§;;o;;o;	;o;;i;i™;@;@;o;;i;i´;T;["button,
+select;@;	[o; ;!["text-transform;o;";o;#;"	none;@;;$;i¨;%o;	;o;;i;i¨;@;@;o;;i;i¨;@;	[ ;&o;	;o;;i;i¨;@;@;o;;i;i¨;i¨;';(;)i ;*o;	;o;;i
+;i¨;@;@;o;;i;i¨;%o;	;@;@;@;@;i™;)i ;%o;	;@ ;@;@;o;;i;i´;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"button;-0;30;i™;i™;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"select;-0;30;i™;i™;%o;	;o;;i;i;0;0;o;;i;i;40;i™o;
+
+;["ç/* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6. */;@;	[ ;i∞;;o;;o;	;o;;i;iπ;@;@;o;;i;iº;T;["Qbutton,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"];@;	[o; ;!["-webkit-appearance;o;";o;#;"button;@;;$;iΩ;%o;	;o;;i;iΩ;@;@;o;;i$;iΩ;@;	[ ;&o;	;o;;i;iΩ;@;@;o;;i$;iΩ;iΩ;';(;)i ;*o;	;o;;i
+;iΩ;@;@;o;;i;iΩ;%o;	;@J;@;@;@Ho; ;!["cursor;o;";o;#;"pointer;@;;$;iæ;%o;	;o;;i;iæ;@;@;o;;i;iæ;@;	[ ;&o;	;o;;i;iæ;@;@;o;;i;iæ;iæ;';(;)i ;*o;	;o;;i
+;iæ;@;@;o;;i;iæ;%o;	;@[;@;@;@Yo; ;!["*overflow;o;";o;#;"visible;@;;$;iø;%o;	;o;;i;iø;@;@;o;;i;iø;@;	[ ;&o;	;o;;i;iø;@;@;o;;i;iø;iø;';(;)i ;*o;	;o;;i
+;iø;@;@;o;;i;iø;%o;	;@l;@;@;@j;iπ;)i ;%o;	;@7;@;@;o;;i;iº;+o;,;-0;.[	o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"button;-0;30;iπ;iπ;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"	html;-0;30;iπ;iπ;%o;	;o;;i;i;0;0;o;;i
+;i;40o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iπo;:;;0;!"	type;""button";<"=;-0;30;iπ;iπ;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iπo;:;;0;!"	type;""reset";<"=;-0;30;iπ;iπ;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iπo;:;;0;!"	type;""submit";<"=;-0;30;iπ;iπ;%o;	;o;;i;i	;0;0;o;;i;i	;40;iπo;
+
+;["7/* Re-set default cursor for disabled elements. */;@;	[ ;i√;;o;;o;	;o;;i;i∆;@;@;o;;i;i«;T;["+button[disabled],
+html input[disabled];@;	[o; ;!["cursor;o;";o;#;"default;@;;$;i»;%o;	;o;;i;i»;@;@;o;;i;i»;@;	[ ;&o;	;o;;i;i»;@;@;o;;i;i»;i»;';(;)i ;*o;	;o;;i
+;i»;@;@;o;;i;i»;%o;	;@–;@;@;@Œ;i∆;)i ;%o;	;@Ω;@;@;o;;i;i«;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"button;-0;30;i∆o;:;;0;!"disabled;0;<0;-0;30;i∆;i∆;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"	html;-0;30;i∆;i∆;%o;	;o;;i;i;0;0;o;;i
+;i;40o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;i∆o;:;;0;!"disabled;0;<0;-0;30;i∆;i∆;%o;	;o;;i;i;0;0;o;;i;i;40;i∆o;
+
+;["∏/* 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6. */;@;	[ ;iÃ;;o;;o;	;o;;i;i“;@;@;o;;i;i”;T;["0input[type="checkbox"],
+input[type="radio"];@;	[	o; ;!["box-sizing;o;";o;#;"border-box;@;;$;i‘;%o;	;o;;i;i‘;@;@;o;;i ;i‘;@;	[ ;&o;	;o;;i;i‘;@;@;o;;i ;i‘;i‘;';(;)i ;*o;	;o;;i
+;i‘;@;@;o;;i;i‘;%o;	;@;@;@;@o; ;!["padding;o;";o;#;"0;@;;$;i’;%o;	;o;;i;i’;@;@;o;;i;i’;@;	[ ;&o;	;o;;i;i’;@;@;o;;i;i’;i’;';(;)i ;*o;	;o;;i
+;i’;@;@;o;;i;i’;%o;	;@%;@;@;@#o; ;!["*height;o;";o;#;"	13px;@;;$;i÷;%o;	;o;;i;i÷;@;@;o;;i;i÷;@;	[ ;&o;	;o;;i;i÷;@;@;o;;i;i÷;i÷;';(;)i ;*o;	;o;;i
+;i÷;@;@;o;;i;i÷;%o;	;@6;@;@;@4o; ;!["*width;o;";o;#;"	13px;@;;$;i◊;%o;	;o;;i;i◊;@;@;o;;i;i◊;@;	[ ;&o;	;o;;i;i◊;@;@;o;;i;i◊;i◊;';(;)i ;*o;	;o;;i
+;i◊;@;@;o;;i;i◊;%o;	;@G;@;@;@E;i“;)i ;%o;	;@;@;@;o;;i;i”;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;i“o;:;;0;!"	type;""checkbox";<"=;-0;30;i“;i“;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;i“o;:;;0;!"	type;""radio";<"=;-0;30;i“;i“;%o;	;o;;i;i;0;0;o;;i;i;40;i“o;
+
+;["∏/* 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof). */;@;	[ ;i€;;o;;o;	;o;;i;i‡;@;@;o;;i;i‡;T;["input[type="search"];@;	[	o; ;!["-webkit-appearance;o;";o;#;"textfield;@;;$;i·;%o;	;o;;i;i·;@;@;o;;i';i·;@;	[ ;&o;	;o;;i;i·;@;@;o;;i';i·;i·;';(;)i ;*o;	;o;;i
+;i·;@;@;o;;i;i·;%o;	;@Ü;@;@;@Ño; ;!["-moz-box-sizing;o;";o;#;"content-box;@;;$;i‚;%o;	;o;;i;i‚;@;@;o;;i&;i‚;@;	[ ;&o;	;o;;i;i‚;@;@;o;;i&;i‚;i‚;';(;)i ;*o;	;o;;i
+;i‚;@;@;o;;i;i‚;%o;	;@ó;@;@;@ïo; ;!["-webkit-box-sizing;o;";o;#;"content-box;@;;$;i„;%o;	;o;;i;i„;@;@;o;;i);i„;@;	[ ;&o;	;o;;i;i„;@;@;o;;i);i„;i„;';(;)i ;*o;	;o;;i
+;i„;@;@;o;;i;i„;%o;	;@®;@;@;@¶o; ;!["box-sizing;o;";o;#;"content-box;@;;$;i‰;%o;	;o;;i;i‰;@;@;o;;i!;i‰;@;	[ ;&o;	;o;;i;i‰;@;@;o;;i!;i‰;i‰;';(;)i ;*o;	;o;;i
+;i‰;@;@;o;;i;i‰;%o;	;@π;@;@;@∑;i‡;)i ;%o;	;@s;@;@;o;;i;i‡;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;i‡o;:;;0;!"	type;""search";<"=;-0;30;i‡;i‡;%o;	;o;;i;i;0;0;o;;i;i;40;i‡o;
+
+;["[/* Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X. */;@;	[ ;iË;;o;;o;	;o;;i;iÏ;@;@;o;;i6;iÌ;T;["hinput[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration;@;	[o;
+
+;["%/*  -webkit-appearance: none; */;@;	[ ;iÓ;;;iÏ;)i ;%o;	;@’;@;@;o;;i6;iÌ;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iÏo;:;;0;!"	type;""search";<"=;-0;30;iÏo;5;60;!"!-webkit-search-cancel-button;7:element;90;-0;iÏ;iÏ;%o;	;o;;i;i;0;0;o;;i8;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iÏo;:;;0;!"	type;""search";<"=;-0;30;iÏo;5;60;!"-webkit-search-decoration;7;=;90;-0;iÏ;iÏ;%o;	;o;;i;i;0;0;o;;i5;i;40;iÏo;
+
+;["9/* Remove inner padding and border in Firefox 3+. */;@;	[ ;iÚ;;o;;o;	;o;;i;iı;@;@;o;;i;iˆ;T;["6button::-moz-focus-inner,
+input::-moz-focus-inner;@;	[o; ;!["border;o;";o;#;"0;@;;$;i˜;%o;	;o;;i;i˜;@;@;o;;i;i˜;@;	[ ;&o;	;o;;i;i˜;@;@;o;;i;i˜;i˜;';(;)i ;*o;	;o;;i
+;i˜;@;@;o;;i;i˜;%o;	;@;@;@;@o; ;!["padding;o;";o;#;"0;@;;$;i¯;%o;	;o;;i;i¯;@;@;o;;i;i¯;@;	[ ;&o;	;o;;i;i¯;@;@;o;;i;i¯;i¯;';(;)i ;*o;	;o;;i
+;i¯;@;@;o;;i;i¯;%o;	;@/;@;@;@-;iı;)i ;%o;	;@;@;@;o;;i;iˆ;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"button;-0;30;iıo;5;60;!"-moz-focus-inner;7;=;90;-0;iı;iı;%o;	;o;;i;i;0;0;o;;i;i;40o;/;.["
+o;0;1o;;{ ;-0;.[o;2	;!"
+input;-0;30;iıo;5;60;!"-moz-focus-inner;7;=;90;-0;iı;iı;%o;	;o;;i;i;0;0;o;;i;i;40;iıo;
+
+;["w/* 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers. */;@;	[ ;i¸;;o;;o;	;o;;i;i ;@;@;o;;i;i ;T;["textarea;@;	[o; ;!["overflow;o;";o;#;"	auto;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@j;@;@;@ho; ;!["vertical-align;o;";o;#;"top;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@{;@;@;@y;i ;)i ;%o;	;@W;@;@;o;;i;i ;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"textarea;-0;30;i ;i ;%o;	;o;;i;i;0;0;o;;i;i;40;i o;
+
+;["Ø/* ==========================================================================
+ *   Tables
+ *   ========================================================================== */ */;@;	[ ;i;;o;
+
+;["3/* Remove most spacing between table cells. */;@;	[ ;i
+;;o;;o;	;o;;i;i;@;@;o;;i;i;T;["
+table;@;	[o; ;!["border-collapse;o;";o;#;"collapse;@;;$;i;%o;	;o;;i;i;@;@;o;;i#;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i#;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@™;@;@;@®o; ;!["border-spacing;o;";o;#;"0;@;;$;i;%o;	;o;;i;i;@;@;o;;i;i;@;	[ ;&o;	;o;;i;i;@;@;o;;i;i;i;';(;)i ;*o;	;o;;i
+;i;@;@;o;;i;i;%o;	;@ª;@;@;@π;i;)i ;%o;	;@ó;@;@;o;;i;i;+o;,;-0;.[o;/;.[o;0;1o;;{ ;-0;.[o;2	;!"
+table;-0;30;i;i;%o;	;o;;i;i;0;0;o;;i;i;40;i;i;%o;	;o;;i;i;@;@;o;;i;i

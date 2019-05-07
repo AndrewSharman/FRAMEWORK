@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Flexbox | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    
+    <style type="text/css">
+    
+    	section {
+	    	padding: 0 30px;
+	    	width: 100%;
+	    	float: left;
+			}
+			
+		p {
+			margin-bottom: 16px;
+			}
+			
+		h2 {
+			margin-top: 32px;
+			}	
+			
+    
+    </style>
+    
+  </head>
+
+	<body class="framework">
+		
+		<header class="unit1">
+		
+			<p><a href="../index.html">Silk Pearce Framework</a></p>
+			
+			<h1>Flexbox demo</h1>
+			
+		</header>
+
+		<section>	
+		
+				<code>display: flex</code>	
+				<p>Child elements automatically float</p>
+			
+		
+			<div class="flexbox">
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+				<div class="item">
+				</div>
+			</div>
+			
+			<h2>Flex direction</h2>
+			
+			<code>flex-direction: row;</code>
+			
+			<div class="flexbox directionRow">
+				<div class="item">
+					One
+				</div>
+				<div class="item">
+					Two
+				</div>
+				<div class="item">
+					Three
+				</div>
+			</div>	
+			
+			<code>flex-direction: row-reverse;</code>	
+						
+			<div class="flexbox directionReverse">
+				<div class="item">
+					One
+				</div>
+				<div class="item">
+					Two
+				</div>
+				<div class="item">
+					Three
+				</div>
+			</div>	
+			
+			<code>flex-direction: column;</code>	
+						
+			<div class="flexbox directionCol">
+				<div class="item">
+					One
+				</div>
+				<div class="item">
+					Two
+				</div>
+				<div class="item">
+					Three
+				</div>
+			</div>	
+			
+			<code>flex-direction: column-reverse;</code>	
+						
+			<div class="flexbox directionRevCol">
+				<div class="item">
+					One
+				</div>
+				<div class="item">
+					Two
+				</div>
+				<div class="item">
+					Three
+				</div>
+			</div>
+			
+			<h2>Justify</h2>
+			
+			<code>justify-content: space-between;</code>
+						
+			<div class="flexbox justify spaceBetween">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>	
+			
+			<code>justify-content: space-around;</code>		
+						
+			<div class="flexbox justify spaceAround">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>	
+			
+			<code>justify-content: center;</code>			
+						
+			<div class="flexbox justify centre">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>	
+			
+					
+			<code>justify-content: flex-start;</code>		
+						
+			<div class="flexbox justify flexStart">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>
+			
+			<code>justify-content: flex-end;</code>	
+						
+			<div class="flexbox justify flexEnd">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>
+			
+			<h2>Align</h2>
+			
+			<code>align-items: stretch; (default)</code>		
+						
+			<div class="flexbox alignStretch">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>			
+			
+			<code>align-items: flex-start;</code>		
+						
+			<div class="flexbox alignItems alignStart">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>
+			
+			<code>align-items: flex-end;</code>		
+						
+			<div class="flexbox alignItems alignEnd">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>	
+			
+			<code>align-items: baseline;</code>		
+						
+			<div class="flexbox alignItems alignBase">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>				
+			
+			<code>align-items: center;</code>		
+						
+			<div class="flexbox alignItems alignCentre">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>	
+			
+			<code>align-self: center;</code>		
+						
+			<div class="flexbox alignItems alignEnd">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two ">
+					Two
+				</div>
+				<div class="item three alignSelf">
+					Three
+				</div>
+			</div>	
+				
+				
+			<h2>Align content</h2>
+			
+			<code>align-content: flex-start|flex-end|center…;</code>		
+												
+			<div class="flexbox alignContentEnd">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>	
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>	
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>					
+								
+						
+			</div>				
+								
+				
+			
+			<h2>Reorder</h2>
+			
+			<code>order: 1|2|3;</code>
+			
+			<div class="flexbox reOrder">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>	
+			
+			<h2>Grow</h2>	
+			
+			<code>flex-grow: 1|2|3;</code>
+						
+			<div class="flexbox grow">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item three">
+					Three
+				</div>
+			</div>	
+			
+			<div class="flexbox grow">
+				<div class="item one">
+					One
+				</div>
+				<div class="item two">
+					Two
+				</div>
+				<div class="item six">
+					Six
+				</div>
+			</div>				
+		
+		</section>
+										
+									
+		
+	</body>
+</html>	

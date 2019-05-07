@@ -1,0 +1,64 @@
+// SASS EXAMPLES
+
+// Variables
+
+// Colour
+
+
+$baseColour: #607783;
+
+$accentColour: #0090d3;
+
+$black: #242424;
+
+
+
+// Breakpoints
+
+
+$mobile: 600px;
+
+$tablet: 768px;
+
+$desktop: 1224px;
+
+$largeScreen: 1824px;
+
+
+
+// Mixins
+
+// Border radius
+
+// @include border-radius(12px);	
+
+@mixin border-radius($radius) {
+		-webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		-ms-border-radius: $radius;
+		-o-border-radius: $radius;
+		border-radius: $radius;
+		}
+	 
+	 
+// Transition	 
+	 
+// @include transition(background,0.4s);	 
+
+@mixin transition ($element,$time) {
+    -webkit-transition: $element $time linear;
+    -moz-transition: $element $time linear;
+    -o-transition: $element $time linear;
+    transition: $element $time linear;
+    }
+
+// Scale	 
+	 
+// @include scale(12px,12px);    
+    
+ @mixin scale ($x-axis,$y-axis) {
+	-ms-transform: scale($x-axis,$y-axis);
+	-webkit-transform: scale($x-axis,$y-axis); 
+	transform: scale($x-axis,$y-axis);
+    }   
+    

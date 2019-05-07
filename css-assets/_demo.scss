@@ -1,0 +1,47 @@
+
+// Prairie //
+
+
+// body.prairie {
+//	background: darken($baseColour,10%)
+//	}
+
+
+.prairie header {
+	background-color: lighten($baseColour, 48%); 
+	}
+
+
+.prairie header .centreWrap {
+	height: 200px;
+	padding-top: 50px;
+	margin-top: 20px;
+	}
+
+.prairie header h4.button a {
+	border: 2px solid $accentColour;
+	color: $accentColour;
+	}
+	
+	
+.prairie header h4.button a:hover {
+	border: 2px solid darken($accentColour, 18%);
+	color: darken($accentColour, 18%);
+	}
+		
+.prairie .unit3 {
+	margin-bottom: 40px;
+	}
+	
+.prairie .footerCont {
+	margin-top: 20px;
+	}	
+
+.prairie hr {
+	margin: 20px 0;
+	border:none;	
+	border-top:1px lighten($baseColour, 30%) solid;
+	height: 1px;
+	}
+	
+	

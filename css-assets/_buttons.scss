@@ -1,0 +1,71 @@
+
+a.button {
+	margin: .2em 0;
+	}
+	
+a.button  {
+	color: $baseColour;
+	border: 1px solid $baseColour;
+	display: inline-block;
+	padding: .6em .9em .65em .9em;
+	@include transition(color,0.2s);
+	@include transition(border-color,0.2s);
+	@include transition(background-color,0.2s);
+	}	
+	
+			
+a.button:hover {
+	color: $accentColour;
+	border-color: $accentColour;
+	}	
+	
+a.large {
+	@extend .button;
+	font-size: 2em;
+	}	
+
+a.medium {
+	@extend .button;
+	font-size: 1.6em;
+	}	
+
+a.small {
+	@extend .button;
+	font-size: .8em;
+	}	
+	
+a.oval {
+	@extend .button;
+	 @include border-radius(40px);
+	}
+
+a.roundCorner {
+	@extend .button;
+	 @include border-radius(10px);
+	}
+	
+	
+a.fill {
+	@extend .button;
+	background: $baseColour;
+	color: #fff;
+	border: 0;
+	}
+	
+	
+a.fill:hover {
+	background: $accentColour;
+	color: #fff;	
+	border: 0;
+	}	
+	
+a.pillRight {
+	@extend .button;
+	 @include border-radius(40px 0 0 40px);
+	}	
+				
+a.pillLeft {
+	@extend .button;
+	 @include border-radius(0 40px 40px 0);
+	}	
+			

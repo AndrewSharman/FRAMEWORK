@@ -1,0 +1,205 @@
+ .flexDemo {
+	
+	margin:32px;
+	
+	h2, h3, p {
+		margin: 16px 0;
+		}
+	p {
+		font-size: 1.3em;
+		}
+		
+	h2 {
+		color: #00a3ff;
+		}		
+	
+	}
+
+
+
+.flexbox {
+	
+	width: 100%;
+	//background: lighten($baseColour, 40%);
+	display: flex;
+	
+@media only (max-width: $mobile) {	
+			display: block;
+			}	
+
+	.item {
+		background: $baseColour;
+		height: 140px;
+		width: 140px;
+		margin: 10px;
+		color: #fff;
+		padding: 12px;
+		}
+	
+	}
+	
+// PARENT ELEMENTS 	
+	
+	
+// REORDER
+
+.reOrder {
+	
+	.item.one {
+		order: 3;
+		}	
+	
+	.item.two {
+		order: 1;
+		}	
+		
+		
+	.item.three {
+		order: 2;
+		}
+	
+	}	
+		
+	
+// DIRECTION
+
+.flexbox.directionRow {
+	flex-direction: row;
+	}	
+	
+.flexbox.directionReverse {
+	flex-direction: row-reverse;
+	}	
+	
+.flexbox.directionCol {
+	flex-direction: column;
+	}
+	
+.flexbox.directionRevCol {
+	flex-direction: column-reverse;
+	}	
+	
+// GROW		
+	
+.flexbox.grow {
+	
+	.item.one {
+		flex-grow: 1;
+		}	
+	
+	.item.two {
+		flex-grow: 2;
+		}	
+		
+		
+	.item.three {
+		flex-grow: 3;
+		}
+		
+		
+	.item.four {
+		flex-grow: 4;
+		}	
+	
+	.item.five {
+		flex-grow: 5;
+		}	
+		
+		
+	.item.six{
+		flex-grow: 6;
+		}		
+		
+	}	
+
+
+// JUSTIFY
+
+	
+.flexbox.justify.spaceBetween	{
+	justify-content: space-between;
+	}	
+
+.flexbox.justify.spaceAround	{
+	justify-content: space-around;
+	}
+
+.flexbox.justify.centre	{
+	justify-content: center;
+	}
+
+.flexbox.justify.flexStart	{
+	justify-content: flex-start;
+	}
+
+.flexbox.justify.flexEnd	{
+	justify-content: flex-end;
+	}
+
+		
+	
+	
+// ALIGN	
+
+
+.flexbox.alignItems	{
+	
+	.item.one {
+		height: 40px;
+		}	
+	
+	.item.two {
+		height: 80px;
+		}	
+		
+		
+	.item.three {
+		height: 60px;
+		}	
+	
+	}
+	
+	
+.alignStart	{
+	 align-items: flex-start;
+	}	
+	
+.alignEnd	{
+	 align-items: flex-end;
+	}	
+	
+.alignBase	{
+	  align-items: baseline;
+	}
+	
+.alignCentre	{
+  align-items: center; 
+	}
+
+.alignStretch	{
+	 align-items: stretch;
+	}	
+	
+	
+.alignSelf	{
+	align-self: center;
+	}
+	
+			
+// ALIGN CONTENT
+
+
+.alignContentStart {
+	
+	align-content: flex-start;
+	
+	}							
+		
+.alignContentEnd {
+	
+	align-content: flex-end;
+	flex-wrap: wrap;
+	height: 400px;
+	
+	}			
+			

@@ -1,0 +1,219 @@
+/* 
+	Top navigation drop down
+
+*/
+
+// Demo styles
+
+.navBar {
+	background: $black;
+	width: 100%;
+	height: 50px;
+	color: #fff;		
+	}	
+
+ 
+// Menu icon
+
+#menu-icon {
+        display: none; // hide menu icon initially
+		}
+		
+		
+// Menu
+
+ 
+.sf-menu, 
+.sf-menu li {
+        margin: 0;
+        padding: 0;
+		}
+		
+.sf-menu li {
+		font-size: 1em;
+        list-style: none;
+        float: left;
+        margin-right: 5px;
+		}
+ 
+// Menu links
+
+.sf-menu a {
+        padding: 15px 15px 12px 15px; // Padding + height = wrap height
+        display: block;
+        color: #fff;
+        border: none;
+		}
+		
+.sf-menu  > li a {
+        height: 50px;
+        // background-color: blue;
+		}		
+
+
+// .sf-menu a:hover {
+//        color: #ccc;
+//		}
+
+// Drop down menu
+
+
+
+
+ 
+//  nav dropdown
+
+.sf-menu ul {
+        background: $baseColour;
+        padding: 2px;
+        position: absolute;
+        display: none; // hide dropdown
+        width: 200px;
+        z-index: 1000;
+        padding: 0;
+        margin: 0;
+		}
+		
+.sf-menu ul li {
+        float: none;
+        margin: 0;
+        padding: 0;
+        //line-height: 1em;
+		}
+		
+.sf-menu ul li a {
+		margin: 0;
+        padding: 8px 14px;
+        cursor: pointer;
+        @include transition(background,0.2s);
+		}	
+		
+.sf-menu ul li a:hover {
+		background: $black;
+		}			
+
+
+.sf-menu li:hover > ul {
+        display: block; // show dropdown on hover
+		}
+		
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+        left: 200px; // match ul width
+        top:  0;
+		}
+ 
+
+// Mobile version
+
+@media screen and (max-width: $mobile) {
+ 
+     // Nav-wrap - demo
+        #navWrap {
+                position: relative;
+                background: none;
+				}
+				
+		.navBar {
+				background: none;
+				}	
+				
+		.navBar.active {
+				background: $black;
+				}					
+          
+        // main nav
+        .sf-menu {
+                clear: both;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+                padding: 50px 0 0 0;
+                background: $black;
+                display: none; // visibility will be toggled with jquery
+				}
+				
+        .sf-menu li {
+                clear: both;
+                float: none;
+                margin: 0;
+                font-size: 1.2em;
+				}
+        
+        .sf-menu li a {
+        		display: block;
+                padding: 6px 10px;
+                color: #fff;
+				}  
+				      
+        .sf-menu a, 
+        .sf-menu ul a {
+                font: inherit;
+                background: none;
+                display: inline;
+                padding: 0;
+                color: #fff;
+                border: none;
+				}
+				
+        .sf-menu a:hover, 
+        .sf-menu ul a:hover {
+                background: darken($baseColour, 10%);
+                color: lighten($baseColour, 30%);
+				}
+         
+       // dropdown
+       
+        .sf-menu ul {
+                width: auto;
+                position: static;
+                display: block;
+                border: none;
+                background: $baseColour;
+				}
+				
+        .sf-menu ul li {
+                margin: 0;
+                padding: 3px 0 0 0px;
+                font-size: 1em;
+				}
+        
+         .sf-menu ul li a {
+         		display: block;
+                margin: 0;
+                padding: 6px 10px 12px 10px;
+				}  
+        
+         .sf-menu ul li a:hover, .sf-menu ul li a:focus {
+                background: $baseColour;
+				}              
+         
+		.sf-menu li ul {
+				padding: 0;
+				margin: 0;
+				}
+ 
+}
+
+// DESKTOP VERSION
+ 
+@media screen and (min-width: $mobile) {
+ 
+       // ensure #nav is visible on desktop version
+        .sf-menu {
+                display: block !important;
+				}
+				
+		.sf-menu a.first-item {
+        		padding: 15px 15px 17px 0px; // Padding + height = wrap height
+				}
+		
+		 .fixed {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+				}
+ 
+	}

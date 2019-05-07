@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Calc demo | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+        
+        <style type="text/css">
+        
+        	header {
+	        	margin-bottom: 22px;
+				}
+        
+        	section {
+	        	margin: 0 30px;
+	        	background-color: #ccc;
+	        	float: left;
+				}
+	        
+			div.unit1 {
+				width: 100%;
+				margin-bottom: 22px;
+				padding: 20px;
+				background-color: gray;
+				}
+				
+			div.unit1.box1 {
+				width: calc(100% - 80px);
+				}	
+							
+			div.unit1.box2 {
+				width: calc(50% + 80px);
+				}     
+				
+			div.unit1.box3 {
+				margin-left: calc(40px);
+				width: calc(100% - 80px);
+				}  
+				
+			div.unit1.box4 {
+				width: calc(100% / 3);
+				float left;
+				} 
+				
+			div.unit1.box5-A {
+				width: calc(100% / 5);
+				float left;
+				} 	
+				
+			div.unit1.box5-B {
+				width: calc(100% / 5 * 2);
+				float left;
+				} 
+				
+			div.unit1.box5-B {
+				width: calc(100% / 5 * 2);
+				float left;
+				} 
+																			
+			div.unit1.box6 {
+				width: calc(37% * 2);
+				
+				} 	
+				
+			div.unit1.box7 {
+				width: calc(57% * 2 / 5 + 20px);
+				clear: left;
+				} 				
+											   
+        
+        </style>
+        
+    </head>
+    
+	<body class="framework">
+		
+		<header class="unit1">
+		
+			<p><a href="../index.html">Framework</a></p>
+			
+			<h1>Calc demo</h1>
+			
+		</header>
+	    
+	    <section>
+	    	
+	    	<div class="unit1" style="background: none;">
+	    
+		    	<p><strong>Operators:</strong> - (minus), + (add), / (divide), * (multiply)</p>
+		    	
+		    	<p><a href="https://css-tricks.com/a-couple-of-use-cases-for-calc/">Check for browser support</a></p>
+		    	
+		    	
+		    
+	    	</div>
+		    
+		    <div class="unit1 box1">
+			    
+			    Box 1 <code><strong>width: calc(100% - 80px)</code></strong>
+			    
+		    </div>	
+		    
+		    <div class="unit1 box2">
+			    
+			    Box 2 <code><strong>width: calc(50% + 80px)</code></strong>
+			    
+		    </div>	
+		    
+		    <div class="unit1 box3">
+			    
+			    Box 3 <code><strong>margin-left: calc(40px); width: calc(100% - 80px)</code></strong>
+			    
+		    </div>	
+		    
+		    <div class="unit1 box4">
+			    
+			    Box 4 <code><strong>calc(100% / 3)</code></strong>
+			    
+		    </div>		    
+		    	    		    	    
+		    <div class="unit1 box4" style="background-color: #999">
+			    
+			    Box 4 <code><strong>calc(100% / 3)</code></strong>
+			    
+		    </div>	
+		    
+		    <div class="unit1 box4">
+			    
+			    Box 4 <code><strong>calc(100% / 3)</code></strong>
+			    
+		    </div>
+		    
+		    <div class="unit1 box5-A">
+			    
+			    Box 5-A <code><strong>calc(100% / 5)</code></strong>
+			    
+		    </div>
+		    
+		    <div class="unit1 box5-B" style="background-color: #999">
+			    
+			    Box 5-B <code><strong>calc(100% / 5 * 2)</code></strong>
+			    
+		    </div>
+		    
+		    <div class="unit1 box5-B">
+			    
+			    Box 5-B <code><strong>calc(100% / 5)</code></strong>
+			    
+		    </div>
+		    
+		    <div class="unit1 box6">
+			    
+			    Box 6 <code><strong>calc(37% * 2)</code></strong>
+			    
+		    </div>	
+		    
+		    
+		    <div class="unit1 box7">
+			    
+			    Box 7 <code><strong>calc(57% * 2 / 5 + 20px)</code></strong>
+			    
+		    </div>		    		    		    		    		    
+		    		    	    
+	    </section>
+	    
+    </body>
+    
+</html>

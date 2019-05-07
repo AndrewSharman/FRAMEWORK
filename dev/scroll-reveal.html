@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" unit1 scrollContent="ie=edge">
+        <title>Scroll reveal | Framework 2018</title>
+        <meta name="viewport" unit1 scrollContent="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+        
+        <style type="text/css">
+        
+        
+              /* Ensure elements load hidden before ScrollReveal runs */
+              
+			  .sr .scrollContent { 
+			  	visibility: hidden; 
+			  	}
+        
+    
+        
+        	.unit1 {
+	        	background: #999;
+	        	width: 100%;
+	        	height: 450px;
+	        	margin-bottom: 60px;
+	        	padding: 60px;
+				}
+				
+			.unit3 {
+				background: yellow;
+				padding: 10px;
+				}	
+				
+        
+        </style>
+        
+    </head>
+    <body class="framework">
+    
+		<header class="unit1">
+		
+			<p><a href="../index.html">Silk Pearce Framework</a></p>
+			
+			<h1>Scroll reveal</h1>
+			
+		</header>  
+		
+		 
+	    
+	    <div class="unit1 scrollContent">
+	    
+	    	<h3>Block one</h3>
+	    
+	    </div>
+	    
+	    <div class="unit1 scrollContent">
+	    
+	    	<h3>Block two</h3>
+	    
+	    </div>
+	    
+	    <div class="unit1 scrollContent">
+	    
+	    	<h3>Block three</h3>
+	    
+	    </div>
+	    
+	    <div class="unit1 scrollContent">
+	    
+	    	<h3>Block four</h3>
+	    
+	    </div>
+	    
+	    <div class="unit1 scrollContent">
+	    
+	    	<h3>Block five</h3>
+	    
+	    </div>
+	    
+	    	    	    	    	    
+	    <div class="unit1 scrollContent">
+	    
+	    	<h3>Block six</h3>
+	    
+	    </div>	 
+	    
+	    
+	    <div class="unit1">
+	    
+	    	<div class="unit3 block1">
+	    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	    	</div>
+	    
+	    	<div class="unit3 block2">
+	    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	    	</div>
+	    	
+	    	<div class="unit3 block3">
+	    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	    	</div>	    	
+	    
+	    </div>	
+	    
+	    
+	    <div class="unit1">
+	    
+	    	<h3>Block one</h3>
+	    
+	    </div>	    	       
+	    
+    </body>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/jquery-2.2.4.min.js">\x3C/script>')</script>
+	
+	
+<!-- SCROLL REVEAL 
+
+More info and paramenters
+
+
+https://github.com/jlmakes/scrollreveal
+
+-->
+
+
+		
+		 <script src="../js/scrollreveal.js"></script>
+		 
+	    <script type="text/javascript">
+		    window.sr = ScrollReveal({ reset: true });
+		    
+			sr.reveal('.scrollContent', { 
+				duration: 1000, 
+				origin: 'bottom',
+				scale: 1,
+				distance: '200px',
+				reset: false,
+				delay: 300,
+				easing: 'ease-out',
+				});	
+				 
+			sr.reveal('.block1', { 
+				duration: 1000, 
+				origin: 'bottom',
+				scale: 1,
+				distance: '200px',
+				reset: true,
+				delay: 600,
+				scale: 0.9,
+				origin: 'left',
+				 });
+				 
+			sr.reveal('.block2', { 
+				duration: 1000, 
+				origin: 'bottom',
+				scale: 1,
+				distance: '200px',
+				reset: true,
+				delay:900,
+				scale: 0.6,
+				origin: 'bottom',
+				 });
+				 
+			sr.reveal('.block3', { 
+				duration: 1000, 
+				origin: 'bottom',
+				scale: 1,
+				distance: '200px',
+				reset: true,
+				delay: 1200,
+				scale: 0.4,
+				origin: 'right',
+				 });				 				 				 
+				 	 
+		</script>	   
+		 
+    
+    
+</html>

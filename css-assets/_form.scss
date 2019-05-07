@@ -1,0 +1,222 @@
+label {
+	width: 100%;
+	display: block;
+	margin-bottom: 8px;
+	}
+
+
+input {
+	margin-bottom: .8em;
+	}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="password"],
+input[type="search"],
+textarea {
+	background:none;
+	border:1px solid $baseColour;
+	padding: 6px;
+	width: 100%;
+	background:#fff;
+	-webkit-border-radius: 0;  // Removes default rounded corners from iOS
+	}
+
+	
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+	outline:none;
+	border:1px solid $accentColour;
+	@include transition(border,0.4s);
+	}	
+	
+textarea {
+	resize:none; overflow: auto; // Removes unwanted scrollbars in IE
+	margin-bottom: .8em;
+	}	
+	
+// Select	
+	
+	
+select {
+	margin: 6px 0 14px  0;
+	padding: 2px 12px 2px;
+	height: 42px;
+	width: 100%;
+	font-size: .95em;
+	background: none;
+	-webkit-appearance: none;
+	border-color: $baseColour;
+	background-color: #fff;
+	background-image: url(../images/icons/select-icon.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 24px;
+	
+	&:focus {
+		outline:none;
+		}
+		
+	}
+	
+	
+// Submit	
+	
+input[type="submit"] {
+	margin: 4px 0 4px 0;
+	background-color: $accentColour;
+	border: none;
+	color: #fff;
+	padding: 18px 26px;
+	 -webkit-appearance: none; // Gets iOS to display the styling 
+	 font-weight: normal;
+	 @include transition(all,0.4s);
+
+	 &:hover {
+		cursor:pointer;
+		color:  lighten($baseColour,4%);
+		background: $black;
+		border: none;	
+		}
+	
+	&:focus {
+		outline:none;
+		}
+	}		
+	
+// Search	
+	
+input[type="submit"].searchIcon {
+	margin: 0;
+	padding: 0;
+	background: none;
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/icons/search-icon-dark.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+		&:hover {
+			opacity: .8;
+		}
+	
+	 }	
+	
+input[type="submit"].searchIcon.button {
+		background-color: $accentColour;
+		background-image: url(../images/icons/search-icon-light.svg);
+		background-size: 20px; 
+		background-position: center center;
+	
+		&:hover {
+			opacity: .8;
+		}
+	
+	 }	
+	 
+	 
+// File	 
+	 
+.uploadButton::-webkit-file-upload-button {
+	visibility: hidden;
+	width: 140px;
+	}
+	
+.uploadButton::before {
+	content: 'Select file';
+	display: inline-block;
+	background: #333;
+	padding: 10px 15px 12px;
+	outline: none;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-weight: 300;
+	font-size: 1.2em;
+	color: #fff;
+	//font-family: $sans;
+	border: none;
+	@include border-radius(4px);
+	
+	&:focus {
+		outline: none;
+		border: none !important;
+		}
+	
+	}	
+	
+.uploadButton:hover::before {
+		background-color: #000;
+		}	
+		
+.uploadButton:active, .uploadButton:active::before {
+		outline: none;
+		border: none;
+		border-color: transparent;
+		}
+
+input[type="file"]:focus {
+	outline: none;
+	}
+	 	
+				
+	
+// Fieldset
+	
+fieldset {	
+	
+		border: none;
+		margin: 0;
+		background: lighten($baseColour,30);
+		
+		legend {
+			padding-top: 3em;
+		}
+	
+		ul {
+			padding: 0;
+		}
+	
+		li {
+			list-style: none;
+		}
+	
+	}	
+	
+
+	
+// Placeholder styles		
+	
+	
+::-webkit-input-placeholder {
+   color: $accentColour;
+}
+
+:-moz-placeholder { // Firefox 18- *//
+   color: $accentColour;  
+}
+
+::-moz-placeholder {  // Firefox 19+ *//
+   color: $accentColour;  
+}
+
+:-ms-input-placeholder {  
+   color: $accentColour;  
+}		
+	
+
+
+	

@@ -1,0 +1,242 @@
+// 
+
+//	Grid - do not make custom changes to this section, put custom changes and overides in 'layout'
+	
+	
+//	Flexbox grid at bottom of page
+	
+//
+
+html {
+	overflow-y: scroll;
+	}
+	
+// Box sizing	
+
+html {
+  box-sizing: border-box;
+	}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+	}
+	
+	
+.centreWrap {
+	width: 96%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 2%;
+	}
+	
+
+.grid {
+	display: flex;
+	
+	
+	// Use gridCols to add gutter with 'space-between'
+	
+	&.gridCols {
+		justify-content: space-between;
+		}
+	
+		
+@media only (max-width: $mobile) {	
+	
+			display: block;
+			}	
+			
+		}
+		
+		
+.unitPadding {
+		
+	// Add padding to the grid
+	padding: 15px;
+	}			
+
+
+
+// UNITS WITHOUT PADDING	
+
+// PADDING ON UNITS IS ADDED UNDER 'DEMO'
+
+
+
+.unit1 {
+	width: 100%;
+	}
+	
+
+.unit2 {
+	width: 50%;
+	}	
+	
+.unit3 {
+	width: calc(100% / 3);
+	}	
+
+.unit4 {
+	width: 25%;
+	}	
+	
+.unit5 {
+	width: 20%;
+	}	
+
+.unit6 {
+	width: calc(100% / 6);
+	}	
+	
+.unit2-3 {
+	// To get a width of 66.666666666%
+	width: calc(200% / 3);
+	}	
+	
+.unit3-4{
+	width: 75%;
+	}
+	
+			
+.unit2-5{
+	width: 40%;
+	}
+	
+.unit3-5{
+	width: 60%;
+	}
+	
+.unit4-5{
+	width: 80%;
+	}	
+	
+
+	
+
+// COLUMNS WITH GUTTERS
+	
+.gridCols {	
+	
+		// Adjust gutter width using clac
+		
+	.unit2 {
+		//	Each column is 50% width -10px so gap is 20px
+		width: calc(50% - 10px);
+		}	
+		
+	.unit3 {
+		// Start with target gutter width 20px
+		// Total gap is 2 x 20px = 40px;
+		// Divide by 3 columns = 13.333333333333px;
+		width: calc(100% / 3 - 13.333333333333px);
+		}	
+	
+	.unit4 {
+		// Each column is 25% width -15px so total gap is 60px
+		// After respacing with 'space between' divide 60px by 3 = 20px
+		width: calc(25% - 15px);
+		}	
+		
+	.unit5 {
+		// Start with target gutter width 20px
+		// Total gap is 4 x 20px = 80px;
+		// Divide by 5 columns = 16px;	
+		width: calc(20% - 16px);
+		}	
+	
+	.unit6 {
+		// Start with target gutter width 20px
+		// Total gap is 5 x 20px = 100px;
+		// Divide by 6 columns = 16.666666666666px;		
+		width: calc(100% / 6 - 16.666666666666px);
+		}	
+	
+	}	
+			
+	
+	
+//RESPONSIVE 
+	
+	
+@media only (max-width: $mobile) {	
+			
+			.unit1,
+			.unit2,
+			.unit3,
+			.unit4,
+			.unit5,
+			.unit6,
+			.unit2-3,
+			.unit3-4,
+			.unit2-5,
+			.unit3-5,
+			.unit4-5 {
+				width: 100%;
+				
+				// version with gutters 
+				
+				.gridCols &{
+					width: 100%;
+					}
+				
+				}				
+		
+		}	
+		
+		
+//THUMBAIL GRID			
+
+.tnGrid {
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+	
+		li {
+			list-style: none;
+			width: 24.25%;
+			padding: 10px;
+			margin: 10px 1% 0 0;
+			
+			&:nth-child(4n) {
+				margin-right: 0;
+				}
+			
+			}
+	}			
+		
+
+//DEMO 
+
+.gridDemo {
+	
+	div {
+		background-color: #ccc;
+		//margin-bottom: 12px;
+		
+		&:nth-child(odd) {
+			background-color: #999;
+			}
+		
+		}
+		
+	div.unit1 {
+		background-color: #fff;
+		}
+	
+		
+	div.unit1.header {
+		background-color: #000;
+		color: #fff;
+		padding: 20px;
+		}			
+	
+	}
+	
+.thumbnailDemo {
+	
+	li {
+		background-color: #ccc;
+		}
+	
+	}	
+

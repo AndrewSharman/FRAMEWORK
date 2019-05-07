@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+		<title>Vertical nav drop down</title>
+		
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+
+	</head>
+	<body>
+			
+			<nav id="nav-wrap">
+				
+				<ul class="sf-menu" id="menu">
+							<li class="current"><a href="#">Menu item 1</a>
+								<ul>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+								</ul>
+							</li>
+							<li class="current"><a href="#">Much longer nav item</a>
+								<ul>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+								</ul>
+							</li>
+							<li class="current"><a href="#">Menu item 3</a>
+								<ul>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+								</ul>
+							</li>
+							<li class="current"><a href="#">Menu item 4</a>
+								<ul>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+									<li><a href="#">menu item</a></li>
+								</ul>
+							</li>								
+				</ul>
+			</nav>	
+	
+	
+		
+<!-- JAVASCRIPT  -->      
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="js/jquery.js"><\/script>')</script>
+	
+	
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+		
+<!--		
+		<script type="text/javascript">
+		// initialise plugins
+		jQuery(document).ready(function($){
+		jQuery('ul.sf-menu').superfish();
+		$("#menu-icon").on("click", function(){
+		jQuery(".sf-menu").slideToggle();
+		jQuery(this).toggleClass("active");
+		});
+		});
+		</script> 		
+-->		
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($){
+			jQuery('ul.sf-menu').superfish();
+			jQuery('#nav-wrap').prepend('<div id="menu-icon"><span class="icons icon-menu"></span><span class="iconLabel">Menu</span></div>');
+			$("#menu-icon").on("click", function(){
+			jQuery(".sf-menu").slideToggle();
+			jQuery(this).toggleClass("active");
+			});
+			});
+		</script>
+		
+	</body>
+</html>

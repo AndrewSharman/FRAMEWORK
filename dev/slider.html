@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title>FlexSlider 2</title>
+	
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" />
+
+	<style type="text/css">
+	
+		body {
+			margin: 0;
+		}
+	
+	</style>
+
+</head>
+<body class="framework grid loading">
+
+
+	<div class="unit1">
+	
+		<header class="unit1">
+		
+			<p><a href="../index.html">Silk Pearce Framework</a></p>
+			
+			<h1>Slider</h1>
+			
+		</header>
+	
+	</div>
+		
+		
+	<div class="unit1">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="../images/slides/slide-1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="../images/slides/slide-2.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="../images/slides/slide-3.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="../images/slides/slide-4.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+	</div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/jquery-2.2.4.min.js">\x3C/script>')</script>
+
+
+  <!-- FlexSlider -->
+  <script defer src="../js/jquery.flexslider-min.js"></script>
+
+	  <script type="text/javascript">
+	    
+	    $(window).load(function(){
+	      $('.flexslider').flexslider({
+	        animation: "fade",
+	        slideshowSpeed: 7000, 
+	        pauseOnAction: true,
+	        pauseOnHover: true, 
+	        slideshow: true,
+	        
+	        <!-- Small dots at the bottom -->
+			controlNav: true,
+			
+			<!-- Left / right arrows-->
+			directionNav: false,
+			prevText: "",
+			nextText: "",        
+	        
+	        start: function(slider){
+	          $('body').removeClass('loading');
+	        }
+	      });
+	    });
+	    
+	  </script>	
+
+
+
+
+
+</body>
+</html>

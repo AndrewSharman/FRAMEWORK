@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>JQuery | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    
+	<style type="text/css">
+		
+	h3 {
+		font-size: 1em;
+		margin: 8px 0;
+		}	
+		
+	h3 span.button {
+		background-color: #d0d0d0;
+		display: inline-block;
+		padding: 8px 12px;
+		margin-right: 2px;
+		}
+		
+	h3 span.button:hover {
+		cursor: pointer;
+		}		
+	
+	.content {
+		margin-top: 22px;
+		padding: 16px 24px;
+		background-color: #d0d0d0;
+		border: 1px solid #999;
+		margin-bottom: 8px;
+		}
+		
+	.hiddenContent {
+		display: none;
+		}
+		
+	.addClass.colorChange {
+		background-color: #ccf1fa;
+		}			
+		
+	.toggleContent.toggled {
+		background-color: #ccf1fa;
+		}
+
+	
+	</style>   
+    
+  </head>
+
+	<body class="framework">
+		
+		<header class="unit1">
+		
+			<p><a href="../index.html">Silk Pearce Framework</a></p>
+			
+			<h1>JQuery</h1>
+			
+		</header>
+		
+		<div class="unit1">
+		
+			<div class="centreWrap">
+	
+				<h3><span class="button" id="fadeIn">Fade in</span><span class="button" id="fadeOut">Fade out</span></h3>
+				
+				<div class="content hiddenContent" id="fadeInContent">
+				
+					<h4>Fade in content</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				</div>
+				
+				<h3><span class="button" id="addClass">Add class</span><span class="button" id="removeClass">Remove class</span></h3>
+				
+				<div class="content addClass" id="addClassContent">
+				
+					<h4>Add class</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				</div>				
+
+
+				<h3><span class="button" id="slideDown">Slide down</span><span class="button" id="slideUp">Slide up</span></h3>
+				
+				<div class="content hiddenContent" id="slideContent">
+				
+					<h4>Fade in content</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				</div>	
+				
+				<h3><span class="button" id="toggleClass">Toggle class</span></h3>
+				
+				<div class="content toggleContent" id="toggleContent">
+				
+					<h4>Toggle class content</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				</div>	
+				
+				<h3><span class="button" id="fadeToggle">Fade toggle</span></h3>
+				
+				<div class="content hiddenContent" id="fadeToggleContent">
+				
+					<h4>Fade in content</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				</div>	
+				
+				<h3><span class="button" id="slideToggle">Slide toggle</span></h3>
+				
+				<div class="content hiddenContent" id="slideToggleContent">
+				
+					<h4>Slide toggle content</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				</div>								
+											
+				
+			</div>
+			
+		</div>
+		
+		
+<!-- Javascript -->			
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/jquery-2.2.4.min.js">\x3C/script>')</script>
+
+	<script>
+	
+		  $( "#fadeIn" ).click(function() {
+			  $( "#fadeInContent" ).fadeIn("slow");
+			});	
+			
+		  $( "#fadeOut" ).click(function() {
+			  $( "#fadeInContent" ).fadeOut("fast");
+			});	
+			
+		  $( "#addClass" ).click(function() {
+			  $( ".addClass" ).addClass('colorChange');
+			});	
+										
+		  $( "#removeClass" ).click(function() {
+			  $( ".addClass" ).removeClass('colorChange');
+			});	
+			
+		  $( "#slideDown" ).click(function() {
+			  $( "#slideContent" ).slideDown("slow");
+			});				
+			
+		  $( "#slideUp" ).click(function() {
+			  $( "#slideContent" ).slideUp("slow");
+			});			
+			
+		  $( "#toggleClass" ).click(function() {
+			  $( "#toggleContent" ).toggleClass("toggled");
+			});	
+			
+		  $( "#fadeToggle" ).click(function() {
+			  $( "#fadeToggleContent" ).fadeToggle("slow");
+			});		
+			
+		  $( "#slideToggle" ).click(function() {
+			  $( "#slideToggleContent" ).slideToggle("slow");
+			});						
+							
+		
+	</script>
+
+	
+
+
+		
+	
+
+					
+
+</body>
+</html>

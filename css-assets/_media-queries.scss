@@ -1,0 +1,110 @@
+/* 
+
+	Media queries
+	
+*/
+
+
+// IPAD PORTRAIT
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) { 
+	
+	
+	
+}
+
+
+
+
+// IPAD LANDSCAPE
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) { 
+	
+	
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+// Basic grid
+
+	.unit2, .unit3, .unit6,
+	.unit2:first-child, .unit3:first-child, .unit6:first-child {
+		width: 92%;
+		margin: 0 4%;	
+		}
+		
+	.unit4, .unit4:first-child {
+		width: 100%;
+		margin: 0;	
+		}		
+
+// Layout 
+
+
+	.centreWrap {
+		width: 100%;
+		max-width: auto;
+		margin: 0;
+		padding: 0;
+		position: inherit;
+		}
+		
+	.footerCont {
+		width: 92%;
+		padding: 0 4%;
+		}		
+
+		
+// Grid with padding
+
+	
+	.unit2.unitpadding, 
+	.unit3.unitpadding,
+	.unit6.unitpadding {
+		width: 84%;	
+		padding: 0 4%;
+		}		
+		
+	.unitpadding {
+		padding: 0 1%;	
+		}
+		
+	.unit4.unitpadding, .unit4.unitpadding:first-child {
+		width: 92%;
+		margin: 0;
+		padding: 0 4%;	
+		}	
+		
+// Form
+
+	.formWrap {
+		width: 94%;
+		padding: 0 2%;
+		}
+	
+	.formLeft, 
+	.formRight {
+		width: 98%;
+		margin: 0;
+		float: none;
+		}
+			
+	.formWrap p {
+		margin: 0;
+		padding: 0;
+		}			
+		
+				
+		
+
+	}

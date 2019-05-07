@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Form | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    
+  </head>
+
+	<body class="framework">
+		
+		<header class="unit1">
+		
+			<p><a href="../index.html">Silk Pearce Framework</a></p>
+			
+			<h1>Form</h1>
+			
+		</header>
+
+	
+
+<!-- FORM FIELDS -->
+
+	<section class="unit1">
+	
+		<div class="centreWrap">
+	
+		<form>
+		
+			<input name="title" type="hidden" id="hidden" />
+		
+			
+			<label for="title">Title</label>
+				
+			<select name="title">
+		       <option label="Mr" value="Mr">Mr</option>
+		       <option label="Mrs" value="Mrs">Mrs</option>
+		       <option label="Dr" value="Dr">Dr</option>
+			</select>
+							     										
+				
+			<label for="name">Name</label>
+			<input  type="text" name="name"id="name" placeholder="Your name" required autofocus />
+
+				
+			<label for="phone">Telephone</label>
+			<input type="tel" name="phone" id="phone" placeholder="Your telephone no" required />
+
+				
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="Your email" required />
+
+				
+			<label for="address1">Address 1</label>
+			<input type="text" name="address1" id="address1"/>
+				
+			
+			<label for="address2">Address 2</label>
+			<input type="text" name="address2" id="address2"/>
+
+				
+			<label for="town-city">Town/city</label>
+			<input type="text" name="town-city" id="town-city"/>
+				
+			
+			<label for="county">County</label>
+			<input type="text"  name="county" id="county"/>
+				
+			
+			<label for="postcode">Postcode</label>
+			<input type="text" name="postcode" id="postcode"/>
+				
+			
+			
+		<!-- SELECT BOX -->	
+			
+			
+				
+			<p>Drop down</p>
+		
+		
+				 <select name="ComOS">
+				     <option selected label="Select" value="Select">Select</option>
+				     <optgroup label="Group one">
+				       <option label="Item one A" value="Item one A">Item one A</option>
+				       <option label="Item one B" value="Item one B">Item one B</option>
+				       <option label="Item one C" value="Item one C">Item one C</option>
+				     </optgroup>
+				     <optgroup label="Group two">
+				       <option label="Item two A" value="Item two A">Item two A</option>
+				       <option label="Item two B" value="Item two B">Item two B</option>
+				     </optgroup>
+				     <optgroup label="Group three">
+				       <option label="Item three A" value="Item three A">Item three A</option>
+				       <option label="Item three B" value="Item three B">Item three B</option>
+				     </optgroup>
+				 </select>				     										
+				
+				
+			
+		<!-- CHECK BOXES -->							
+				
+				<div>
+					Checkboxes
+				
+					<input type="checkbox" name="areas" value="Item 1"/> Item 1<br />
+					<input type="checkbox" name="areas" value="Item 2"/> Item 2<br />
+					<input type="checkbox" name="areas" value="Item 3"/> Item 3				     									     										
+				</div>
+				
+			
+		<!-- RADIO BUTTONS -->							
+			
+				<div>
+				
+					<label for="radioButtons">Radio buttons</label>	
+				
+					<input type="radio" name="radioButtons" value="Item 1"/> Item 1<br />
+						<input type="radio" name="radioButtons" value="Item 2"/> Item 2<br />
+						<input type="radio" name="radioButtons" value="Item 3"/> Item 3				     									     										
+				
+				</div>	
+			
+			
+		<!-- TEXT AREA EXAMPLE -->	
+										
+			
+				
+					<label for="enquiry">Enquiry</label>
+				
+				
+					<textarea rows="5" cols="51" name="enquiry" id="enquiry" name="enquiry"></textarea>
+				
+			
+			
+		<!-- OTHER FORM TYPES -->	
+			
+					<h3>Other field types</h3>
+				
+					<label for="date">Date</label>
+					<input type="date" name="date"  id="date"/>
+					
+										
+					<label for="datetime-local">Date and time</label>
+					<input type="datetime-local" name="datetime-local"  id="datetime-local"/>		
+					
+					<p>File</p>
+								
+					<label><input type="file" id="file" name="file" accept="image/png, image/jpeg, image/tiff" class="uploadButton"></label>
+					
+					
+					<label for="number">Number</label>
+					<input type="number" name="number"  id="number"/>		
+					
+												
+			
+		<!-- SUBMIT BUTTON -->	
+			
+			
+				
+					&nbsp;
+				
+				<div class="unit2-3 submit">
+					<input type="submit" name="Submit" id="Submit" value="Submit" />
+					<input type="submit" name="Submit" id="Submit" value="Submit" class="rounded" />
+				
+			
+			
+		</form>	
+		
+	
+		<h2>Search form </h2>
+			
+		
+			
+				
+					<label for="keywords">Search</label>
+				
+				
+					<input type="search" name="keywords" id="keywords" maxlength="100" />
+					<input type="submit" name="Search" id="Search" value="" class="searchIcon" />
+					<input type="submit" name="Search" id="Search" value="" class="searchIcon button" />
+					<input type="submit" name="Search" id="Search" value="" class="searchIcon button circular" />
+				
+			
+	
+	
+	
+			<!-- FIELDSET  (USE TO GROUP FORM SECTIONS TOGTHER OR INSTEAD OF DIV -->
+			
+			<h2>Fieldset</h2>
+			
+				<fieldset>
+					<legend>Fieldset with legend</legend>
+					<ul>
+						<li class="field">
+							<label for="text1">Label 1</label>
+							<input name="text1" type="text" placeholder="Label one" />
+						</li>
+						<li class="field">
+							<label for="text2">Label 2</label>
+							<input name="text2" type="password" placeholder="Label two" />
+						</li>
+					</ul>
+				</fieldset>
+				
+		
+		</div>		
+				
+				
+	</section>
+
+</body>
+</html>

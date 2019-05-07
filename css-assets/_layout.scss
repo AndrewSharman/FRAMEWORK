@@ -1,0 +1,131 @@
+/* 
+	Layout
+	
+	Use the following pattern for class naming:
+	
+	sectionElement
+
+	
+
+*/
+
+// Media query example
+
+@media only (max-width: $mobile) {	
+				
+				}	
+
+
+// PRELOAD PREVENTS TRANSITIONS FIRING ON PAGE LOAD - * needs js in footer in page-load.html *
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+	}
+
+
+
+// 1. GLOBAL ELEMENTS
+
+
+		
+
+
+img {
+	width: 100%;
+	height: auto;
+	}
+	
+a[data-filetype="image"] {
+	border-bottom: none;
+	}
+
+hr {
+	border: none;
+	background-color: $baseColour;
+	height: 1px;
+	width: 100%;
+	display: block;
+	margin-bottom: 42px;
+	}
+	
+	
+// Social media example
+	
+	
+.socialMedia {
+	padding: 0;
+	li {
+		list-style: none;
+		display: inline-block;
+		width: 100px;
+		margin-right: 22px;
+		@include transition(opacity,0.2s);
+		&:last-of-type {
+			margin-right: 0;
+			}
+		&:hover {
+			opacity: .8;
+			cursor: pointer;
+			}	
+		}
+	}	
+
+
+
+
+// Table example
+
+table {
+	
+	background-color: lighten($baseColour, 30%);
+	width: 100%;
+	text-align: left;
+	vertical-align: top;
+	
+		thead {
+			background-color: lighten($baseColour, 20%);
+		}
+		
+		th {
+			padding: 8px;
+			}		
+		
+		td {
+			padding: 8px;
+			}
+			
+		tr:nth-child(even) {
+				background-color: lighten($baseColour, 34%);	
+   			}
+			
+			
+		tfoot {
+			
+			td {
+				background-color: $baseColour;
+				color: #fff;
+				font-size: .9em
+				}
+			
+			}	
+	
+	}
+
+
+
+
+// 2. GLOBAL STYLES that can be applied to any element
+
+
+.rounded {
+	@include border-radius(10px);
+	}
+
+
+.circular {
+	@include border-radius(50%);
+	}
+
