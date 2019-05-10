@@ -6,35 +6,51 @@
 
 // Comment out unwanted components to remove from compiled version
 
-// Global
+
 
 @import 'normalize';
 
 @import 'sass';
 
+
+
+// Layout
+
+
 @import 'flexbox';
 
 @import 'grid';
 
-@import 'typography';
-
 @import 'layout';
 
-@import 'buttons';
 
 
-// Optional
+// Presentation
 
-//@import 'sticky-footer';
-
-@import 'form';
-
-
-// Sliders
+@import 'faqs';
 
 @import 'flexslider';
 
 @import 'slick-slider';
+
+@import 'scrollbar';
+
+@import 'icon-font';
+
+@import 'hover-effects';
+
+
+// Elements
+
+@import 'typography';
+
+@import 'form';
+
+@import 'buttons';
+
+@import 'arrow';
+
+
 
 
 // Navigation
@@ -49,21 +65,24 @@
 
 // @import 'vertical-nav-dropdown';
 
-@import 'faqs';
+
+
+// Interactive
 
 @import 'modal';
 
-@import 'icon-font';
-
-@import 'scrollbar';
-
-@import 'snippets';
+@import 'video-container';
 
 // @import 'media-queries';
 
 
 
-@import 'arrow';
+
+
+
+// Optional
+
+//@import 'sticky-footer';
 
 
 // Example styles
