@@ -1,0 +1,80 @@
+
+
+
+.animationExamples {
+	
+	.demoStage {
+		
+		width: 100%;
+		height: 600px;
+		background-color: #032f46;
+		margin-bottom: 2px;
+		position: relative;
+		
+		.demoBlock {
+			
+			width: 200px;
+			height: 200px;
+			background-color: #b07a97;
+	
+			}
+			
+		
+		.demoBall {
+			
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #b07a97;
+			position: absolute;
+			bottom: 300px; 
+			}
+		
+		
+	}
+	
+	
+}
+
+
+
+.fadeIn {
+	animation-duration: 3s;
+	animation-name: fadeIn;
+	}
+	
+	
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+	}
+
+  to {
+    opacity: 1;
+  	}
+}	
+
+
+
+.bounce {
+	animation-duration: 1s;
+	animation-name: bounce;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	}
+	
+	
+@keyframes bounce {
+  0% {
+   bottom: 300px;
+	}
+	
+	
+  100% {
+   bottom: 0;
+	} 	
+	
+  	
+}	
+	
+	
