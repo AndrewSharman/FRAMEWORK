@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style type="text/css">
+	        
+	        body {
+		        margin: 150px;
+				font-family: sans-serif;
+				font-size: 22px;
+				background-color: #ebe6e6;	        
+	        	}
+	        
+	        .container {
+		        width: 200px;
+		        height: 200px;
+		        margin: 75px 0 0 75px;
+				}
+				
+			.cube {
+				width: 100%;
+				height: 100%;
+				backface-visibility: visible;
+				perspective-origin: 120% 120%;
+				transform-style: preserve-3d;
+				perspective: 250px;
+				}	
+				
+			.face {
+				display: block;
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				border: none;
+				background-color: #00ddff;
+				line-height: 100px;
+				font-family: sans-serif;
+				font-size: 22px;
+				text-align: center;
+				}	
+				
+			.front {
+				opacity: .2;
+				transform: translateZ(50px);
+				}	
+				
+
+				
+			.right {
+				opacity: .3;
+				transform: rotateY(-90deg) translateZ(50px);
+				}				
+				
+			.left {
+				opacity: .4;
+				transform: rotateY(-90deg) translateZ(50px);
+				}
+				
+			.top {
+				opacity: .5;
+				transform: rotateX(90deg) translateZ(50px);
+				}					
+				       
+			.bottom {
+				opacity: .6;
+				transform: rotateX(-90deg) translateZ(50px);
+				}
+				
+				
+ 			.back {
+				opacity: .7;
+				transform: rotateY(180deg) translateZ(50px);
+				}					
+				        
+        </style>
+        
+    </head>
+    <body>
+	    
+	<p>Perspective demo</p>    
+	    
+	    <div class="container">
+			    
+		    <div class="cube">
+			    
+			    <div class="face front"></div>
+			    
+			    <div class="face back"></div>
+			    
+			    <div class="face right"></div>
+			    
+			    <div class="face left"></div>
+			    
+			    <div class="face top"></div>
+			    
+			    <div class="face bottom"></div>
+			    
+		    </div>
+		    
+	    </div>
+	    
+	    
+	    <div class="container">
+			    
+		    <div class="cube">
+			    
+			    <div class="face right">Hello</div>
+			    
+		    </div>
+		    
+	    </div>	
+	    
+	    
+	    <div class="container">
+			    
+		    <div class="cube">
+			    
+			    <div class="face top">Hello</div>
+			    
+		    </div>
+		    
+	    </div>	 
+	    
+	    
+	    <div class="container">
+			    
+		    <div class="cube">
+			    
+			    <div class="face bottom">Hello</div>
+			    
+		    </div>
+		    
+	    </div>		    
+	    	    
+	        
+	    
+    </body>
+</html>
