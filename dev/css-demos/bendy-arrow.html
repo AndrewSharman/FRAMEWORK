@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animated Arrow Icon</title>
+
+  
+      <style type="text/css">
+      
+      
+			body {
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  height: 100vh;
+			  background: #4b4c4f;
+			}
+			
+			.arrow-icon {
+			  background-color: #4b4c4f;
+			  height: 2.8em;
+			  width: 2.8em;
+			  display: block;
+			  padding: 0.5em;
+			  margin: 1em auto;
+			  position: relative;
+			  cursor: pointer;
+			  border-radius: 4px;
+			}
+			
+			.left-bar {
+			  position: absolute;
+			  background-color: transparent;
+			  top: 0;
+			  left: 0;
+			  width: 40px;
+			  height: 10px;
+			  display: block;
+			  transform: rotate(35deg);
+			  float: right;
+			  border-radius: 2px;
+			}
+			
+			.left-bar:after {
+			  content: "";
+			  background-color: white;
+			  width: 40px;
+			  height: 10px;
+			  display: block;
+			  float: right;
+			  border-radius: 6px 10px 10px 6px;
+			  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+			  z-index: -1;
+			}
+			
+			.right-bar {
+			  position: absolute;
+			  background-color: transparent;
+			  top: 0px;
+			  left: 26px;
+			  width: 40px;
+			  height: 10px;
+			  display: block;
+			  transform: rotate(-35deg);
+			  float: right;
+			  border-radius: 2px;
+			}
+			
+			.right-bar:after {
+			  content: "";
+			  background-color: white;
+			  width: 40px;
+			  height: 10px;
+			  display: block;
+			  float: right;
+			  border-radius: 10px 6px 6px 10px;
+			  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+			  z-index: -1;
+			}
+			
+			.open .left-bar:after {
+			  transform-origin: center center;
+			  transform: rotate(-70deg);
+			}
+			
+			.open .right-bar:after {
+			  transform-origin: center center;
+			  transform: rotate(70deg);
+			}
+			      
+      
+      </style>
+
+  
+</head>
+
+<body>
+	
+	<a class="arrow-icon">
+	  	<span class="left-bar"></span>
+	  	<span class="right-bar"></span>
+	</a>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+  <script type="text/javascript">
+  
+  
+  $( ".arrow-icon" ).click(function() {
+  $(this).toggleClass("open");
+	});
+  
+  </script>
+  
+
+
+
+
+</body>
+
+</html>

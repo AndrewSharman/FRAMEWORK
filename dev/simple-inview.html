@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <link rel="stylesheet" href="../css/style.css">
+        
+        <style type="text/css">
+        
+        	body {
+	        	margin: 0;
+        	}
+        
+        	.boxA {
+	        	width: 100%;
+	        	height: 2000px;
+	        	/*background: aqua;*/
+        	}
+        	
+        	.boxB {
+	        	width: 100%;
+	        	height: 800px;
+	        	background-color: lightcoral;
+        	}
+        	
+        	.boxB h1 {
+	        	margin: 0;
+	        	padding: 42px;
+	        	font-family: Helvetica, sans-serif;
+	        	color: #fff;
+	        	opacity: 0;
+				}
+				
+			.boxB h1.inview {
+				opacity: 1;
+				}	
+        
+        
+        </style>
+        
+    </head>
+    <body class="framework">
+	    
+	   <header class="unit1">
+		
+			<p><a href="../index.html">Framework</a></p>
+			
+			<h1>Simple inview</h1>
+			
+		</header>
+	    
+	    <div class="boxA"></div>
+	    
+	    <div class="boxB"><h1>Hello</h1></div>
+	    
+	    
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	  <script>window.jQuery || document.write('<script src="../js/jquery-2.2.4.min.js">\x3C/script>')</script>	    
+	    
+	   <script type="text/javascript">
+		    
+	    $(window).on('scroll', function(){
+			if ($(".boxB h1").is(':visible')){
+             $(".boxB h1").addClass("inview");
+        	}
+		});
+	    
+	    </script>
+	    
+    </body>
+</html>

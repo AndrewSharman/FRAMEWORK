@@ -96,7 +96,47 @@
 					
 		ul.child-2 li:nth-child(3n+0) {
 			   color: red;
-			}		
+			}
+			
+			
+/* Example 9. Attribute selector */
+
+
+		.attSelect a {
+		  color: blue;
+		}
+		
+		/* Internal links, beginning with "#" */
+		.attSelect a[href^="#"] {
+		  background-color: gold;
+		}
+		
+		/* Links with "example" anywhere in the URL */
+		.attSelect a[href*="example"] {
+		  background-color: silver;
+		}
+		
+		/* Links with "insensitive" anywhere in the URL,
+		   regardless of capitalization */
+		.attSelect a[href*="insensitive" i] {
+		  color: cyan;
+		}
+		
+		/* Links with "cAsE" anywhere in the URL, 
+		with matching capitalization */ 
+		.attSelect a[href*="cAsE" s] { 
+		  color: pink; 
+		}
+		
+		/* Links that end in ".org" */
+		.attSelect a[href$=".org"] {
+		  color: red;
+		}
+		
+		.attSelect span[class^="caption"] {
+		  color: lightcoral;
+		}
+					
 		
 		</style>
 
@@ -172,7 +212,7 @@
 					   border-bottom: none;
 					}</code>
 			<p><a href="#">This link has a border</a> but the image does not.</p>
-			<p><a href="#" data-filetype="image"><img src="http://www.centralcycles.org.uk/images/categories/category-childrens-bike.jpg" /></a></p>
+			<p><a href="#" data-filetype="image"><img src="../images/temps/fiat-500-500px.jpg" /></a></p>
 			
 			</p>
 			
@@ -209,7 +249,23 @@
 					<li>Item eight</li>				
 				</ul>
 				
-		</div>		
+		</div>	
+		
+		<div class="attSelect">
+			
+			<ul>
+			  <li><a href="#internal">Internal link</a></li>
+			  <li><a href="http://example.com">Example link</a></li>
+			  <li><a href="#InSensitive">Insensitive internal link</a></li>
+			  <li><a href="http://example.org">Example org link</a></li>
+			</ul>
+			
+			<p><span class="captionOne">Caption one</span><br>
+				<span class="captionTwo">Caption two</span><br>
+				<span class="captionThree">Caption three</span><br>
+				<span class="captionFour">Caption four</span></p>
+					
+		</div>
 
 	
 	</body>

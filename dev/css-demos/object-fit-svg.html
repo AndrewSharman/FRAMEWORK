@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style type="text/css">
+	        
+			html, body{
+			  margin:0px;
+			  width:100%;
+			  height:100%;
+			}
+			
+			section {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				background-image: url(images/sunset.jpg);
+				background-size: cover;
+				}
+			
+			svg{ 
+			  width:100%;
+			  height:100%;
+			  display: block;
+			  opacity: .6;
+			}
+			
+			
+        	svg #square11 rect, svg #square8 rect {	        	
+	        	animation-name: colourFade ;
+	        	animation-duration: 2s;
+	        	animation-iteration-count:infinite;
+	        	animation-direction: alternate;
+        		}
+        		
+        	@keyframes colourFade {
+				  0% {fill: #aad7ee;}
+				  100%  {fill: #00b1df;}
+				}
+				
+			div.caption {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: space-around;
+				flex-direction: column;
+				text-align: center;
+				}
+				
+					
+			h1 {
+				font-size: 6vw;
+				font-family: Arial;
+				animation-name: caption;
+	        	animation-duration: 6s;
+	        	animation-iteration-count:infinite;
+	        	animation-direction: alternate;				
+				}
+				
+        	@keyframes caption {
+				  0% {color: #00fff6;}
+				  30% {color: #8fcb41}
+				  60% {color: #8fcb41}
+				  100%  {color: #22e688;}
+				}				
+						
+							        
+        </style>
+        
+    </head>
+    <body>
+
+	<section>
+	
+		<div class="caption"><h1>Caption</h1></div>
+	
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" preserveAspectRatio="xMidYMid slice">
+			<title>checkerboard</title>
+			<g id="square1"><rect x="100" width="100" height="100" fill="#aad7ee"/></g>
+			<g id="square2"><rect x="200" width="100" height="100" fill="#78c4e6"/></g>
+			<g id="square3"><rect x="300" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square4"><rect x="400" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square5"><rect x="500" width="100" height="100" fill="#78c4e6"/></g>
+			<g id="square6"><rect x="600" width="100" height="100" fill="#aad7ee"/></g>
+			<g id="square7"><rect y="100" width="100" height="100" fill="#78c4e6"/></g>
+			<g id="square8"><rect x="100" y="100" width="100" height="100" fill="#aad7ee"/></g>
+			<g id="square2"><rect x="200" y="100" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square9"><rect x="300" y="100" width="100" height="100" fill="#aad7ee"/></g>
+			<g id="square10"><rect x="400" y="100" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square11"><rect x="500" y="100" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square12"><rect x="600" y="100" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square13"><rect y="200" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square14"><rect x="100" y="200" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square15"><rect x="200" y="200" width="100" height="100" fill="#78c4e6"/></g>
+			<g id="square16"><rect x="300" y="200" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square17"><rect x="400" y="200" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square18"><rect x="500" y="200" width="100" height="100" fill="#78c4e6"/></g>
+			<g id="square19"><rect x="600" y="200" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square20"><rect y="300" width="100" height="100" fill="#78c4e6"/></g>
+			<g id="square21"><rect x="100" y="300" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square22"><rect x="200" y="300" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square23"><rect x="300" y="300" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square24"><rect x="400" y="300" width="100" height="100" fill="#78c4e6"/></g>
+			<g id="square25"><rect x="500" y="300" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square26"><rect x="600" y="300" width="100" height="100" fill="#aad7ee"/></g>
+			<g id="square27"><rect y="400" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square28"><rect x="100" y="400" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square29"><rect x="200" y="400" width="100" height="100" fill="#aad7ee"/></g>
+			<g id="square30"><rect x="300" y="400" width="100" height="100" fill="#aad7ee"/></g>
+			<g id="square31"><rect x="400" y="400" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square32"><rect x="500" y="400" width="100" height="100" fill="#00b1df"/></g>
+			<g id="square33"><rect x="600" y="400" width="100" height="100" fill="#78c4e6"/></g>
+			<g id="square34"><rect width="100" height="100" fill="#00b1df"/></g>
+		</svg>
+		
+	</section>	
+	
+	<div class="content">
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+	</div>
+		    
+    </body>
+</html>

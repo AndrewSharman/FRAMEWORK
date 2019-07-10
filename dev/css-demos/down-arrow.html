@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style type="text/css">
+        
+        	body {
+	        	display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+        		background-color:#4b4c4f;
+				}
+        
+			.scrollIcon {
+				width: 32px;
+				height: 62px;
+				margin: 0 auto;
+				/*background-color: #333;*/
+				animation-duration: 1.5s;
+				animation-name: scrollIcon;
+				animation-iteration-count: infinite;
+				animation-timing-function: cubic-bezier(0.1, 4, 0.1, 4);
+				}
+				
+			span {
+				width: 12px;
+				height: 12px;
+				display: block;
+				border-left: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+				transform: rotate(-45deg);
+				animation-duration: 1.5s;
+				animation-name: arrow;
+				animation-iteration-count: infinite;
+				}	
+				
+			@keyframes arrow {
+				  0% {opacity: 0}
+				  40% {opacity: 1}
+				  60% {opacity: 1}
+				  100% {opacity: 0}
+				}	
+				
+			@keyframes scrollIcon {
+				  0% {padding-top: 0}
+				  100% {padding-top: 20px}
+				}								
+        
+        </style>
+        
+    </head>
+    <body>
+	    
+	    <div class="scrollIcon">
+		    <span></span>
+	    </div>
+	    
+	    
+    </body>
+</html>

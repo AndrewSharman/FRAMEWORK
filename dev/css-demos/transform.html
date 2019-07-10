@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Transform | Framework 2018</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" media="all">
+    
+	<style type="text/css">
+	
+		.box {
+		  width: 260px;
+		  height: 80px;
+		  padding: 20px;
+		  background-color: skyblue;
+		  }
+		  
+	
+		.moved {
+		  transform: translate(10px, -10px);
+		  background-color: pink;
+		  }
+		  
+		.rotate {
+			width: 120px;
+			transform: rotate(45deg);
+			}
+			
+		.rotateTranslate {
+			width: 120px;
+			transform: translate(20px, 60px) rotate(45deg); /* translate [width], [height]
+			}	
+		
+		.scaled {
+			transform: scale(0.5); /* Equal to scaleX(0.7) scaleY(0.7) */
+			background-color: pink;
+			}
+			
+		.hover {
+			-webkit-transition: background-color 0.2s;
+			-webkit-transform 0.2s, box-shadow 0.2s;
+			}	
+			
+			
+		.hover:hover {
+			transform: scale(1.05);
+			background-color: pink;
+			box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, .4);
+			cursor: pointer;
+			}	
+			
+		
+			
+		.container {
+			width: 300px;
+			padding: 22px 10%;
+			background-color: lightcoral;
+			height: 220px;
+			margin: 100px;
+			}
+	
+	</style>   
+    
+  </head>
+
+	<body class="framework">
+	
+		<header class="unit1">
+		
+			<p><a href="../index.html">Framework</a></p>
+			
+				<h1>Transform</h1>
+			
+		</header>
+		
+		
+		
+		<div class="container">
+		
+		
+			<div class="box">Static</div>
+			<div class="box moved">Moved</div>
+			<div class="box">Static</div>	
+				
+		</div>
+		
+		<div class="container">
+		
+			<div class="box rotate">
+			
+				Rotate
+			
+			</div>
+		
+				
+		</div>	
+		
+		<div class="container">
+		
+			<div class="box rotateTranslate">
+			
+				Rotate and translate
+			
+			</div>
+		
+				
+		</div>	
+		
+		<div class="container">
+		
+			<div class="box">Normal</div>
+		
+			<div class="box scaled">
+			
+				Scaled
+			
+			</div>
+		
+				
+		</div>	
+				
+			
+		<div class="container">
+		
+			<div class="box">Normal</div>
+		
+			<div class="box hover">
+			
+				Hover
+			
+			</div>
+		
+			<div class="box">Normal</div>
+				
+		</div>			
+		
+</body>
+</html>

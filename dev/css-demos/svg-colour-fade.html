@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style type="text/css">
+	        
+	        html, body {
+		        margin: 0;
+		        height: 100%;
+				}
+				
+			section {
+				width: 100%;
+				height: 100%;
+				background-color: lightcoral;
+				overflow: hidden;
+				}	
+				
+        	svg {
+				width: 100%;
+				height: 100%;
+				 object-fit: cover;
+				}					
+        
+        	svg rect {	        	
+	        	animation-name: colourFade ;
+	        	animation-duration: 8s;
+	        	animation-iteration-count:infinite;
+	        	animation-direction: alternate;
+        		}
+        		
+        	@keyframes colourFade {
+				  0% {fill: black;}
+				  100%  {fill: red;}
+				}	
+				
+				
+			section img {
+				width: 100%;
+				height: auto;
+				
+				}	
+        		  	
+        
+        </style>
+        
+    </head>
+    <body>
+    
+    <section>
+    
+    	
+    	<img src="images/sunset.jpg" alt="sunset" width="3300" height="2200" >
+    
+    </section>
+    
+	<!--    
+	<section>   
+	    
+	    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+		    
+		    <title>Artboard 2</title>
+		    
+		    <rect width="140" height="140" fill="#60cbea"/>
+		    
+		</svg>
+		
+	</section>    
+	--> 
+    </body>
+</html>
