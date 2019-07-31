@@ -5,38 +5,45 @@
 	
 	
 		h3 {
-			margin: 1.5em 0;
-		}
+			margin: 1em 0;
+			font-size: 1em;
+			}
+		
+		p {
+			line-height: 1.6em;
+			font-size: 1.4em;
+			}
 	
 		p a {
 			border: none;
-			font-size: 1.4em;
-		}
+			cursor: pointer;
+			 color: #36bcfa;
+			}
 		
 	}
-
-
-
+	
+	
 	
 .hoverEffects-1 {
       
-      a {
+       a {
         margin: 0;
         padding: 0;
-        transition: all 0.2s ease-in-out;
         position: relative;
         
+       
         &:before,
         &:after {
           content: "";
           position: absolute;
-          bottom: -10px;
+          bottom: -3px;
           width: 0px;
-          height: 5px;
-          margin: 5px 0 0;
-          transition: all 0.2s ease-in-out;
-          transition-duration: 0.75s;
+          height: 3px;
+          margin: 0;
+          transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out;
+          transition-duration: 0.3s;
           opacity: 0;
+          background-color: lighten(#666, 12%);
 		  }
         
           &:after {
@@ -45,41 +52,37 @@
 			}
 		 
       }
-      
-      &:hover {
-        cursor: pointer;
         
-	       a {
+	   a:hover {
 	          &:before,
 	          &:after {
 	            width: 100%;
 	            opacity: 1;
+	           
 	          }
         	}
-		}
-	}
 
-
-
+	}	
 	
+
+
 .hoverEffects-2 {
-      
-      a {
+
+       a {
         margin: 0;
         padding: 0;
-        transition: all 0.2s ease-in-out;
         position: relative;
         
         &:before,
         &:after {
           content: "";
           position: absolute;
-          bottom: -10px;
+          bottom: -3px;
           width: 0px;
-          height: 5px;
-          margin: 5px 0 0;
-          transition: all 0.2s ease-in-out;
-          transition-duration: 0.75s;
+          height: 3px;
+          margin: 0;
+          transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out;
+          transition-duration: 0.3s;
           opacity: 0;
 		  }
         
@@ -89,114 +92,189 @@
 			}
 		 
       }
-      
-      &:hover {
-        cursor: pointer;
         
-	       a {
+	   a:hover {
 	          &:before,
 	          &:after {
 	            width: 100%;
 	            opacity: 1;
+	           
 	          }
         	}
-		}
+
 	}
-
-
+	
+	
 	
 .hoverEffects-3 {
       
-      a {
+       a {
         margin: 0;
         padding: 0;
-        transition: all 0.2s ease-in-out;
         position: relative;
+        border: none;
+        color: #36bcfa;
+        
         
         &:before,
         &:after {
           content: "";
           position: absolute;
-          bottom: -10px;
+          bottom: -3px;
           width: 0px;
-          height: 5px;
-          margin: 5px 0 0;
+          height: 3px;
+          margin: 0;
           transition: all 0.2s ease-in-out;
-          transition-duration: 0.75s;
+          transition-duration: 0.3s;
           opacity: 0;
+          background-color: blue;
 		  }
         
           &:before {
             left: calc(50%);
-            background-color: blue;
-          }
+          	}
           
           &:after {
             right: calc(50%);
-            background-color: blue;
-          }
+          	}
 		 
       }
-      
-      &:hover {
-        cursor: pointer;
         
-	       a {
+	   a:hover {
+		   	 cursor: pointer;
 	          &:before,
 	          &:after {
 	            width: 50%;
 	            opacity: 1;
+	           
 	          }
         	}
-		}
-	}
-
-
+      
+	}	
+	
+	
 	
 .hoverEffects-4 {
       
-      a {
+       a {
         margin: 0;
         padding: 0;
-        transition: all 0.2s ease-in-out;
         position: relative;
+        border: none;
+        color: #36bcfa;
+        
         
         &:before,
         &:after {
           content: "";
           position: absolute;
-          bottom: -10px;
+          bottom: -3px;
           width: 0px;
-          height: 5px;
-          margin: 5px 0 0;
+          height: 3px;
+          margin: 0;
           transition: all 0.2s ease-in-out;
-          transition-duration: 0.75s;
+          transition-duration: 0.3s;
           opacity: 0;
+          background-color: blue;
 		  }
         
           &:before {
             left: 0;
-            background-color: blue;
-          }
+          	}
           
           &:after {
             right: 0;
-            background-color: blue;
-          }
+          	}
 		 
       }
-      
-      &:hover {
-        cursor: pointer;
         
-	       a {
+	   a:hover {
+		   	 cursor: pointer;
 	          &:before,
 	          &:after {
 	            width: 50%;
 	            opacity: 1;
+	           
 	          }
         	}
+      
+	}	
+	
+	
+	
+	
+/* This version allows a break in the line */
+	
+.hoverEffects-5 {	
+	
+		width: 600px;
+		
+		p {
+			font-size: 1.4em;
 		}
-	}		
+		
+		a {
+		  transition: background-size 1s linear;
+		  display: inline;
+		  font-size: 22px;
+		  font-size: 2.2rem;
+		  line-height: 45px;
+		  color: #000;
+		  text-decoration: none;
+		  padding-bottom: 5px;
+		  background: linear-gradient(to right, #00d1b1 0%, #278fc6 98%);
+		  background-size: 0px 2px;
+		  background-repeat: no-repeat;
+		  background-position: left 85%;
+		  text-shadow: 0;
+			}
+			
+		a:hover {
+		  background-size: 100% 2px;
+		}	
+	
+		}
+			
+			
+/* Marker hightlight */
+	
+.hoverEffects-6 {	
 	
 		
+		a {
+			background: linear-gradient(to bottom, #00d1b1 0%, #00d1b1 100% );
+			background-position: 0 100%;
+			background-repeat: repeat-x;
+			background-size: 4px 4px;
+			color: #000;
+			text-decoration: none;
+			transition: background-size .2s;
+		}
+		
+		a:hover {
+		  background-size: 4px 50px;
+		}
+	
+	}
+	
+	
+	
+.hoverEffects-7 {	
+		
+		a {
+			background: linear-gradient(to bottom, #00d1b1 0%, #00d1b1 100% );
+			background-position: 0 100%;
+			background-repeat: repeat-x;
+			background-size: 4px 4px;
+			color: #000;
+			text-decoration: none;
+			transition: background-size .2s;
+		}
+		
+		a:hover {
+		  background-size: 4px 50px;
+		}
+	
+	}	
+	
+	

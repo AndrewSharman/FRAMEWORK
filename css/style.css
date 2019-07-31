@@ -1191,117 +1191,165 @@ span.iconLabel {
 
 /* Hover effects */
 .hoverEffects h3 {
-  margin: 1.5em 0; }
+  margin: 1em 0;
+  font-size: 1em; }
+
+.hoverEffects p {
+  line-height: 1.6em;
+  font-size: 1.4em; }
 
 .hoverEffects p a {
   border: none;
-  font-size: 1.4em; }
+  cursor: pointer;
+  color: #36bcfa; }
 
 .hoverEffects-1 a {
   margin: 0;
   padding: 0;
-  transition: all 0.2s ease-in-out;
   position: relative; }
   .hoverEffects-1 a:before, .hoverEffects-1 a:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -3px;
     width: 0px;
-    height: 5px;
-    margin: 5px 0 0;
-    transition: all 0.2s ease-in-out;
-    transition-duration: 0.75s;
-    opacity: 0; }
+    height: 3px;
+    margin: 0;
+    transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #858585; }
   .hoverEffects-1 a:after {
     left: 0;
     background-color: blue; }
 
-.hoverEffects-1:hover {
-  cursor: pointer; }
-  .hoverEffects-1:hover a:before, .hoverEffects-1:hover a:after {
-    width: 100%;
-    opacity: 1; }
+.hoverEffects-1 a:hover:before, .hoverEffects-1 a:hover:after {
+  width: 100%;
+  opacity: 1; }
 
 .hoverEffects-2 a {
   margin: 0;
   padding: 0;
-  transition: all 0.2s ease-in-out;
   position: relative; }
   .hoverEffects-2 a:before, .hoverEffects-2 a:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -3px;
     width: 0px;
-    height: 5px;
-    margin: 5px 0 0;
-    transition: all 0.2s ease-in-out;
-    transition-duration: 0.75s;
+    height: 3px;
+    margin: 0;
+    transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transition-duration: 0.3s;
     opacity: 0; }
   .hoverEffects-2 a:after {
     right: 0;
     background-color: blue; }
 
-.hoverEffects-2:hover {
-  cursor: pointer; }
-  .hoverEffects-2:hover a:before, .hoverEffects-2:hover a:after {
-    width: 100%;
-    opacity: 1; }
+.hoverEffects-2 a:hover:before, .hoverEffects-2 a:hover:after {
+  width: 100%;
+  opacity: 1; }
 
 .hoverEffects-3 a {
   margin: 0;
   padding: 0;
-  transition: all 0.2s ease-in-out;
-  position: relative; }
+  position: relative;
+  border: none;
+  color: #36bcfa; }
   .hoverEffects-3 a:before, .hoverEffects-3 a:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -3px;
     width: 0px;
-    height: 5px;
-    margin: 5px 0 0;
+    height: 3px;
+    margin: 0;
     transition: all 0.2s ease-in-out;
-    transition-duration: 0.75s;
-    opacity: 0; }
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: blue; }
   .hoverEffects-3 a:before {
-    left: calc(50%);
-    background-color: blue; }
+    left: calc(50%); }
   .hoverEffects-3 a:after {
-    right: calc(50%);
-    background-color: blue; }
+    right: calc(50%); }
 
-.hoverEffects-3:hover {
+.hoverEffects-3 a:hover {
   cursor: pointer; }
-  .hoverEffects-3:hover a:before, .hoverEffects-3:hover a:after {
+  .hoverEffects-3 a:hover:before, .hoverEffects-3 a:hover:after {
     width: 50%;
     opacity: 1; }
 
 .hoverEffects-4 a {
   margin: 0;
   padding: 0;
-  transition: all 0.2s ease-in-out;
-  position: relative; }
+  position: relative;
+  border: none;
+  color: #36bcfa; }
   .hoverEffects-4 a:before, .hoverEffects-4 a:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -3px;
     width: 0px;
-    height: 5px;
-    margin: 5px 0 0;
+    height: 3px;
+    margin: 0;
     transition: all 0.2s ease-in-out;
-    transition-duration: 0.75s;
-    opacity: 0; }
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: blue; }
   .hoverEffects-4 a:before {
-    left: 0;
-    background-color: blue; }
+    left: 0; }
   .hoverEffects-4 a:after {
-    right: 0;
-    background-color: blue; }
+    right: 0; }
 
-.hoverEffects-4:hover {
+.hoverEffects-4 a:hover {
   cursor: pointer; }
-  .hoverEffects-4:hover a:before, .hoverEffects-4:hover a:after {
+  .hoverEffects-4 a:hover:before, .hoverEffects-4 a:hover:after {
     width: 50%;
     opacity: 1; }
+
+/* This version allows a break in the line */
+.hoverEffects-5 {
+  width: 600px; }
+  .hoverEffects-5 p {
+    font-size: 1.4em; }
+  .hoverEffects-5 a {
+    transition: background-size 1s linear;
+    display: inline;
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 45px;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    background: linear-gradient(to right, #00d1b1 0%, #278fc6 98%);
+    background-size: 0px 2px;
+    background-repeat: no-repeat;
+    background-position: left 85%;
+    text-shadow: 0; }
+  .hoverEffects-5 a:hover {
+    background-size: 100% 2px; }
+
+/* Marker hightlight */
+.hoverEffects-6 a {
+  background: linear-gradient(to bottom, #00d1b1 0%, #00d1b1 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s; }
+
+.hoverEffects-6 a:hover {
+  background-size: 4px 50px; }
+
+.hoverEffects-7 a {
+  background: linear-gradient(to bottom, #00d1b1 0%, #00d1b1 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s; }
+
+.hoverEffects-7 a:hover {
+  background-size: 4px 50px; }
 
 /* 
 	Typography
