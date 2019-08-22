@@ -208,6 +208,29 @@
 					</ul>
 				</fieldset>
 				
+				
+			<h2>Confirm before submit</h2>
+			
+			<form>
+			
+			<p>Please check the box below to confirm<br>
+			
+			<input type="checkbox" id="confirm" /></p>									 
+
+			<input type="submit" name="Submit" value="Submit" id="submit" disabled="disabled" />
+				
+			</form>
+			
+		    <script type="text/javascript">
+		    
+			    
+			   document.getElementById('confirm').addEventListener('click', function (e) {
+			   			document.getElementById('submit').disabled = !e.target.checked;
+					});
+			    
+			</script>
+												
+				
 		
 		</div>		
 				
