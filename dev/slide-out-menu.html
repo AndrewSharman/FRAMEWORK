@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Slide-Out Menuo</title>
+		
+		
+		 <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+		
+	</head>
+	
+	<body>
+	
+		<header>
+		
+			<span class="toggle-button">
+	        	<div class="menu-bar menu-bar-top"></div>
+	        	<div class="menu-bar menu-bar-middle"></div>
+	        	<div class="menu-bar menu-bar-bottom"></div>
+	        </span>
+	        
+			<div class="menu-wrap">
+			
+				<div class="menu-sidebar">
+				
+					<ul class="menu">
+					
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blog</a></li>
+						<li class="menu-item-has-children"><a href="#">Click The Arrow</a>
+							<span class="sidebar-menu-arrow"></span>
+							<ul class="sub-menu">
+								<li><a href="#">Alignment</a></li>
+								<li><a href="#">Markup</a></li>
+								<li><a href="#">Comments</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Courses</a></li>
+						<li><a href="#">Get In Touch</a></li>
+						
+					</ul>			
+				</div>
+				
+			</div>
+			
+		</header>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+		
+		<script>
+		
+			$(document).ready(function() {
+			
+				var $toggleButton = $('.toggle-button'),
+			    	$menuWrap = $('.menu-wrap'),
+			    	$sidebarArrow = $('.sidebar-menu-arrow');
+			
+				// Hamburger button
+			
+				$toggleButton.on('click', function() {
+					$(this).toggleClass('button-open');
+					$menuWrap.toggleClass('menu-show');
+				});
+			
+				// Sidebar navigation arrows
+			
+				$sidebarArrow.click(function() {
+					$(this).next().slideToggle(300);
+				});
+			
+			});		
+		
+		
+		</script>	
+		
+	
+	</body>
+
+</html>
